@@ -1,0 +1,90 @@
+
+## Question 1
+**(Select all that apply.)** Which requirement will not be fulfilled if we don’t constrain the number of segments to reduce the graph size?
+### Options
+
+1. Availability 
+Correct
+The query will return the results slower affecting the user response time.
+----------------------------
+
+2. Consistency
+Incorrect
+
+----------------------------
+
+3. Scalability
+Correct
+It won't be easy to modify a humongous graph.
+----------------------------
+
+4. Reliability
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 2
+**(True or False)** The type of partitioning (region- or `PlaceID`-based) affects the structure of QuadTrees.
+### Options
+
+1. True 
+Correct
+Yes, it does as we have no assurance that each segment will have the same number of places in it. Though this won’t be an issue as we will be finding our neighboring segments within the defined radius.
+----------------------------
+
+2. False
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 3
+In which scenario is there a greater chance of delay in response time if we use the leader-follower approach to help us in replication?
+
+
+### Options
+
+1. When the leader updates the followers asynchronously
+Incorrect
+The leader will not wait until all followers have updated the data, it'll update the data in its storage and then send the update to followers.
+----------------------------
+
+2. When the leader updates the followers synchronously
+Correct
+The leader waits until all followers have updated the data.
+----------------------------
+
+3. When the leader saves the updates of a day and sends the changes to followers once a day
+<!--The follower saves the updates of a day and makes the change once a day.-->
+Incorrect
+The leader will not ask the followers to update the data at once so there won't be a delay.
+<!--In this case, the followers will not update the leader it actually has updated the data. It will just send an okay message upon receiving the update.-->
+----------------------------
+
+---------------------------------------------
+
+## Question 4
+**(Select all that apply.)** What will happen if the leader and followers both die simultaneously?
+### Options
+
+1. We would have to rebuild the QuadTrees.
+Correct
+We would have to rebuild QuadTrees from the key-value stores where we kept them.
+----------------------------
+
+2. The performance will be affected.
+Correct
+We would not be able to serve any user query which will affect the performance.
+----------------------------
+
+3. The availability will be affected.
+Correct
+<!--Consistency will not be affected.
+The change has been done in the leader node while it has to be reflected -->
+Both leader and followers will be down so they will be unable to process the requests.
+----------------------------
+
+---------------------------------------------

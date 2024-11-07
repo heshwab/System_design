@@ -1,0 +1,6 @@
+
+## Question 1
+While consistent hashing is a good choice, it may result in unequal distribution of data, and certain servers may get overloaded. How do we resolve this problem?
+### Answer
+A number of consistent hashing algorithms’ flavors have been suggested over time. We can use one such flavor (#key# used here: DeCandia, Giuseppe, et al. "Dynamo: Amazon's highly available key-value store." ACM SIGOPS operating systems review 41.6 (2007): 205-220.  #key#) that distributes load uniformly and even makes multiple copies of the same data on different cache servers. Each cache server can have virtual servers inside it, and the number of virtual servers in a machine depends on the machine’s capability. This results in a finer control on the amount of load on a cache server. At the same time, it improves availability.
+---------------------------------------

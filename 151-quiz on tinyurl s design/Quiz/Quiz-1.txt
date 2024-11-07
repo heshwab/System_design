@@ -1,0 +1,106 @@
+
+## Question 1
+In the URL shortener system's design, the main reason to change the base of the sequencer to `58` was:
+### Options
+
+1. To make the generated short URLs more secure.
+Incorrect
+Security is independent of the base of the sequencer.
+----------------------------
+
+2. To enhance the readability of the generated short URLs.
+Correct
+We change the base to 58 to remove the look-alike characters.
+----------------------------
+
+3. To improve the system's availability.
+Incorrect
+Availability has no direct correspondence with the base of the sequencer.
+----------------------------
+
+4. To ensure the system's low latency.
+Incorrect
+Low-latency has no direct correspondence with the base of the sequencer.
+----------------------------
+
+---------------------------------------------
+
+## Question 2
+In the system design phase, which reason below was the reason why we decided to use MongoDB?
+### Options
+
+1. It has a higher write throughput as compared to reading.
+Incorrect
+The opposite is true for MongoDB.
+----------------------------
+
+2. It ensures atomicity upon concurrent writes.
+Correct
+
+----------------------------
+
+3. It is the only NoSQL database for more specific problems like TinyURL. 
+Incorrect
+It is a very vague statement and, more importantly, false. Every database has its pros and cons.
+----------------------------
+
+4. It's easier to scale MongoDB as compared to other leader-less NoSQL databases.
+Incorrect
+All NoSQL databases are easily scalable, and such a comparison is not readily available.
+----------------------------
+
+---------------------------------------------
+
+## Question 3
+**(Select all that apply.)** To meet the functional requirement of creating a custom alias for the short link, which of the following restriction(s) do we need to impose on the `custom_alias` variable for the API call?
+
+You can select multiple correct answers.
+### Options
+
+1. The length of the `custom_alias` shouldn't be greater than the allowed character limit of the short links. 
+Correct
+In our case, we have limited to 11 alpha-numeric characters from base-58.
+----------------------------
+
+2. The user must declare the value of the `custom_alias` variable.
+Incorrect
+It's not a requirement of the system we designed, as the default value is `None`.
+----------------------------
+
+3. Every time a user creates a short link, a single user must enter the same `custom_alias`.
+Incorrect
+It's a possibility but not a requirement; we can update the long URL against the custom URLs, but it's not mandatory for a user.
+----------------------------
+
+4. The `custom_alias` should not contain the look-alike removed characters.
+Correct
+It's an essential requirement to just include the allowed base-58 characters for `custom_alias`.
+----------------------------
+
+---------------------------------------------
+
+## Question 4
+Which strategy did we adopt to counter the predictability of the sequencer-generated unique IDs?
+### Options
+
+1. We changed the base of the sequencer to `58`.
+Incorrect
+
+----------------------------
+
+2. We randomly selected a unique ID from the available pool for each short URL generation.
+Correct
+
+----------------------------
+
+3. We added a load balancer before the sequencer.
+Incorrect
+
+----------------------------
+
+4. We eliminated the alpha-numeric characters.
+Incorrect
+
+----------------------------
+
+---------------------------------------------

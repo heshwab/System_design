@@ -1,0 +1,14 @@
+
+## Question 1
+How will we find nearby places if we create a table for storing all places?
+### Answer
+We can make a table of places that have `Place_ID` as a unique ID and store each place in it. The longitude and latitude columns help us specify the exact location. Indexing both of these columns can help us fetch data efficiently. We can specify each location as a pair of latitude (`M`) and longitude (`N`). We can also search for a place within a given radius of `R` by finding all the places between the latitude `M-R` and `M+R` and the longitude `N-R` and `N+R`. We can apply Dijkstra’s algorithm to find the distance between two points.
+---------------------------------------
+
+## Question 2
+How efficient will our searching be when based on the table?
+### Answer
+We can have multiple lists of places within (`M-R`, `M+R`) and (`N-R`, `N+R`). It’ll be a challenge to handle concurrent requests. When queries that are used to fetch the places will be coming at a high rate for different segments, the response time and performance will be affected.
+
+
+---------------------------------------

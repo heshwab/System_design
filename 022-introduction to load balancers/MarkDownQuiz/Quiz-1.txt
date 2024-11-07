@@ -1,0 +1,6 @@
+
+## Question 1
+What if load balancers fail? Are they not a single point of failure (SPOF)?
+### Answer
+Load balancers are usually deployed in pairs as a means of disaster recovery. If one load balancer fails, and there’s nothing to failover to, the overall service will go down. Generally, to maintain high availability, enterprises use clusters of load balancers that use heartbeat communication to check the health of load balancers at all times. On failure of primary LB, the backup can take over. But, if the entire cluster fails, manual rerouting can also be performed in case of emergencies.
+---------------------------------------

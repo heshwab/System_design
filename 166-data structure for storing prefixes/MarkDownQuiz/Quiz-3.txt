@@ -1,0 +1,6 @@
+
+## Question 1
+If the prefix frequencies keep increasing over time, the corresponding integers storing them can overflow. How can we manage this issue?
+### Answer
+We can normalize frequencies by mapping them in a range, let’s say between zero and 1,000. Alternatively, we can stop any further additions after a certain threshold is reached, assuming that any prefix reaching that threshold is at the top of the rankings.
+---------------------------------------

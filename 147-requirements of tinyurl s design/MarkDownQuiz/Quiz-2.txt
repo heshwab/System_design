@@ -1,0 +1,11 @@
+
+## Question 1
+Why is producing unpredictable short URLs mandatory for our system?
+### Answer
+The following two problems highlight the necessity of producing non-serial, unpredictable short URLs:
+1.  Attackers can have access to the system-level information of the short URLs' total count, giving them a defined range to plan out their attacks. This type of internal information shouldn't be available outside the system. 
+
+2. Our users might have used our service for generating short URLs for secret URLs. With the information above, the attackers can try to list all the short URLs, access them and gain insights about the associated long URLs, risking the secrecy of the private URLs. It will compromise the privacy of a user's data, making our system less secure.
+
+Hence, randomly assigning unique IDs deprives the attackers of such system insights, which are needed for enumerating and compromising the user's private data. 
+---------------------------------------

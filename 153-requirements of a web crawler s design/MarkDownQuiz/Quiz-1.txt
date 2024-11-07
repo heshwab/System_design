@@ -1,0 +1,28 @@
+
+## Question 1
+Where do we get these seed URLs from?
+### Answer
+There are two possible ways to create or gather seed URLs:
+1. We can manually create them
+2. We can scan the IP addresses for the presence of web servers
+
+
+These seed URLs must be of good quality.
+---------------------------------------
+
+## Question 2
+Why are good quality seed URLs important and what happens if the seed quality is not good?
+### Answer
+When we model WWW as a graph where URLs link one node to another, our goal is to discover as much of it as possible during the crawl.
+
+Using a low-quality seed might limit the discovery to just a fraction of the WWW graph.
+---------------------------------------
+
+## Question 3
+How do we select seed URLs for crawling?
+### Answer
+There are multiple approaches to selecting seed URLs. Some of them are:
+- **Location-based**: We can have different seed URLs depending on the location of the crawler.
+Category-based: Depending on the type of content we need to crawl, we can have various sets of seed URLs.
+- **Popularity-based**: This is the most popular approach. It combines both the aforementioned approaches. It groups the seed URLs based on hot topics in a specific area.
+---------------------------------------

@@ -1,0 +1,8 @@
+
+## Question 1
+Would a global clock help solve our problem?
+### Answer
+Since we don’t have a global clock, even if each node can assign unique time stamps to the events happening, these time stamps will come from clocks running at different rates. This would make it harder to compare them, and they won’t be unique.
+
+However, if we have a global clock that gives us time upon request and is always accurate, then we can maintain the causality of events, as well as a unique ID. Such a clock would be significantly valuable, but time is tricky to handle in distributed systems.
+---------------------------------------

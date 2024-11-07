@@ -1,0 +1,28 @@
+
+## Question 1
+Why should we use WebSockets instead of HTTP methods? Why are WebSockets optimal for this kind of communication?
+### Answer
+WebSockets offer us the following characteristics:
+- They have a long-lasting connection between clients and servers. 
+- They enable full-duplex communication. That is, we can simultaneously communicate from client to server and vice versa.
+- There’s no overhead of HTTP request or response headers.
+
+The lightweight nature of WebSockets reduces the latency and allows the server to push changes to clients as soon as they are available.
+---------------------------------------
+
+## Question 2
+The design above depicts a microservices architecture instead of a monolithic one. Why is that suitable here?
+### Answer
+Microservices are preferred for the following reasons:
+
+- Development is simpler and faster.
+- Each service within the architecture is isolated. That is, failure of one service doesn’t produce a cascading effect.
+- Different components may have different programming language requirements for various reasons. Microservices give the freedom of using different programming languages for different components.
+- Because of microservices’ modular nature, it’s easy to scale and update services individually.
+---------------------------------------
+
+## Question 3
+What queuing algorithm is best suited for the operations queue in the design above?
+### Answer
+First in, first out (FIFO) with strict ordering is best suited for the operations queue so that operations are performed in the order requested by the users.
+---------------------------------------

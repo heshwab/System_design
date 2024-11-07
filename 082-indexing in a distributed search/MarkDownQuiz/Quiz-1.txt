@@ -1,0 +1,6 @@
+
+## Question 1
+Would this technique work when too many documents are found against a single term?
+### Answer
+It probably wouldn’t work to return all the documents that are found. Instead, we should sort them based on the relevance to the search query. The top results should be returned to the user, instead of returning all the documents.
+---------------------------------------

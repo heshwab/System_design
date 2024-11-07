@@ -1,0 +1,9 @@
+
+## Question 1
+Can the manager node be considered a single point of failure? If yes, then how can we cope with this problem?
+### Answer
+Yes, because the manager node is the central point of a blob store and is a single point of failure. Therefore, we have to have a backup or shadow server in place of a manager node.
+
+The technique that we use for this is called checkpointing, meaning we take snapshots of the data at different time intervals. A snapshot captures the state, data, hardware configuration of the running manager node, and messages in transit between the manager and data nodes. It maintains the #key# operation log: A logical timeline, defining the serialized order of concurrent operations #key# in an external storage area or snapshot repository. If the manager node fails, an automated system or the administrator uses the snapshot to restart that manager node from the state it failed at and replays the operation log.
+
+---------------------------------------

@@ -1,0 +1,7 @@
+
+## Question 1
+Why didn’t we use load balancers to distribute the requests to all nodes?
+### Answer
+Load balancers distribute client requests according to an algorithm. That algorithm can be as simple as explained above, or it can be something detailed, as described in the next section. The next method we’ll discuss can be one of the ways the load balancers balance the requests across the nodes.
+
+---------------------------------------

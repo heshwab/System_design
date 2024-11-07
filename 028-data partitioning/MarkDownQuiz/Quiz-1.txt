@@ -1,0 +1,8 @@
+
+## Question 1
+Who performs the rebalancing? Is it automatic or manual?
+### Answer
+There are two ways to perform rebalancing: automatic and manual. In **automatic rebalancing**, there’s no administrator. The system determines when to perform the partitions and when to move data from one node to another.
+ 
+In **manual rebalancing**, the administrator determines when and how to perform the partitioning. Organizations perform rebalancing according to their needs. Some use automatic rebalancing, and some use manual.
+---------------------------------------

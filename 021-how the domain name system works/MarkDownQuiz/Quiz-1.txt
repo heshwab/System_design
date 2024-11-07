@@ -1,0 +1,8 @@
+
+## Question 1
+How are DNS names processed? For example, will educative.io be processed from left to right or right to left?
+### Answer
+Unlike UNIX files, which are processed from left to right, DNS names are processed from right to left. In the case of educative.io, the resolvers will first resolve the `.io` part, then `educative`, and so on.
+
+Visually, however, the DNS hierarchy can be viewed as a tree. 
+---------------------------------------

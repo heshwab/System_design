@@ -1,0 +1,6 @@
+
+## Question 1
+Do we store the logs for a lifetime?
+### Answer
+Logs also have an expiration date. We can delete regular logs after a few days or months. Compliance logs are usually stored for up to three to five years. It depends on the requirements of the application.
+---------------------------------------

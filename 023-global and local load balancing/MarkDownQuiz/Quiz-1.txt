@@ -1,0 +1,8 @@
+
+## Question 1
+Can DNS be considered a global server load balancer (GSLB)?
+### Answer
+Yes, there are actually two ways of doing global traffic management (GTM):
+- **GTM through ADCs**: Some ADCs implement GSLB. In that case, ADCs have a real-time view of the hosting servers and forward requests based on the health and capacity of the data center.  
+- **GTM through DNS**: DNS does GSLB by analyzing the IP location of the client. For each user requesting IP for a domain name (for example, www.educative.io), DNS-based GSLB forwards the IP address of the data center geographically closer to the requesting IP location.
+---------------------------------------

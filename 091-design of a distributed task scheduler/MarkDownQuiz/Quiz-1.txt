@@ -1,0 +1,6 @@
+
+## Question 1
+Why do we store tasks in a database? Why should we not push the tasks directly to the queue?
+### Answer
+The queue does not hold data permanently. We pay a cost for the queue service we use. So, we just push those tasks that are ready for execution shortly to the queue. The tasks that are successfully executed need to be removed from the queue. Moreover, there are different scheduling types. A task could be scheduled once, daily, weekly, monthly, or annually. Therefore, we have to save the task somewhere in our storage. 
+---------------------------------------

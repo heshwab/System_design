@@ -1,0 +1,6 @@
+
+## Question 1
+What if two drivers are at the same distance from the rider? How will we select the driver to whom we'll send the request?
+### Answer
+This decision will be made on multiple factors, such as the distance, type of vehicle, rank of the driver, and so on. Still, if two drivers are identical, we can randomly select one and send a request to that driver. If one driver doesn’t accept the ride within a few seconds, we retract the ride offer from this driver and present it to a new one.
+---------------------------------------

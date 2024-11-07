@@ -1,0 +1,10 @@
+
+## Question 1
+Should we lock all shards of a counter before accumulating their values?
+
+### Answer
+No. Reads can happen concurrently with writes without the need for an across-shards lock. This lock will decimate the write performance, the original reason we used sharded counters. Under a relaxed consistency model, where the value of a counter might not reflect the exact current value, there is no need for simultaneous read locks across all shards.
+
+However, depending on the specific use case, such a mechanism might be used when reads frequency is very low.
+
+---------------------------------------

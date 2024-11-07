@@ -1,0 +1,31 @@
+
+## Question 1
+What happens if the leader node fails in the leader-follower protocol?
+
+### Answer
+Two possible solutions can be used in that case:
+* Use the leader election algorithm to elect a new leader among the set of available followers.
+* Use a separate distributed configuration management service to monitor and select leaders.
+
+---------------------------------------
+
+## Question 2
+Is it a good idea to introduce synchronous replication to cache servers?
+### Answer
+Synchronous replication on the cache clusters will introduce a performance penalty because it takes time to replicate the same data to all the cache servers. Therefore, there’s a trade-off between performance and consistency in the usage of asynchronous versus synchronous replication, respectively.
+
+The answer depends on the use case. In case of cache servers, synchronous replication is a good choice if the replicated servers are within close proximity of the primary server.
+---------------------------------------
+
+## Question 3
+<!--- Assume that a large number of concurrent requests are forwarded to a single shard server. If the server uses the LRU algorithm, some of the requests will result in a cache miss and thus write a new entry to the cache while some will result in a cache hit and end up reading from the server. With so many concurrent requests, #key# race conditions: A condition where two or more threads are racing to modify shared data at the same time. #key# are quite likely and, therefore, some #key# locking mechanism: A mechanism by which access to shared data is limited to a single thread only. Thus achieving synchronization. #key# may be required. However, locking an entire data structure for all the reading and writing operations will heavily reduce the performance. How do you think such a problem will be dealt with? --->
+
+<!--- The following is suggested by the proofreading team--->
+Assume that a large number of concurrent requests are forwarded to a single shard server. If the server uses the LRU algorithm, some of the requests will result in a cache miss and write a new entry to the cache, while some will result in a cache hit and end up reading from the server. These concurrent requests may compete with each other. Therefore, some #key# locking mechanisms: A mechanism by which access to shared data is limited to a single thread only. Thus achieving synchronization. #key# may be required. However, locking an entire data structure for all the reading and writing operations will heavily reduce the performance. How do you think such a problem will be dealt with?
+### Answer
+Generally, for concurrent access to shared data, some locking mechanisms like Semaphore, Monitors, Mutex locks, and others are good choices. But as the number of users (readers in case of cache hit or writers in case of a cache miss) grows, locking the entire data structure isn’t a suitable solution. In that case, we can consider the following options:
+
+* **Limited locking:** In this strategy, only specific sections of the entire data structure will be locked. While some threads or processes can read from the data structure simultaneously, some threads may temporarily block access to specific sections of the data structure.
+* **Offline eviction:** Offline eviction may be a possibility where instead of making actual changes to the data structure, only the required changes will be recorded while performing different operations until it’s necessary to commit the changes. This solution is desirable and easy if the cache hit rate is high because a change to the data structure will likely be required when a cache miss occurs.
+* **Lock-free implementation:** Multiple solutions have been proposed which suggest that simultaneous reading and writing over doubly linked list is feasible to support large number of concurrent reading and writing.
+---------------------------------------

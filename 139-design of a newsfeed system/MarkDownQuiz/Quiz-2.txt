@@ -1,0 +1,7 @@
+
+## Question 1
+How is the newsfeed of the friends and followers updated when a user creates a new post?
+
+### Answer
+When a user, say Bob, creates a new post, it is stored in the post database and cache. In the next step, the **newsfeed generation service** generates a newsfeed for Bob’s friends and followers, and the newsfeed cache is updated. The updated newsfeed is delivered to the corresponding users on the next page/screen refresh event.
+---------------------------------------

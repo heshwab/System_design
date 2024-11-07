@@ -1,0 +1,6 @@
+
+## Question 1
+What are the limitations of using hinted handoff?
+### Answer
+A minimal churn in system membership and transient node failures are ideal for hinted handoff. However, hinted replicas may become unavailable before being restored to the originating replica node in certain circumstances.
+---------------------------------------

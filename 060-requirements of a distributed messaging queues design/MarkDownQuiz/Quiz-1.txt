@@ -1,0 +1,18 @@
+
+## Question 1
+Can we extend the design of a single-server messaging queue to a distributed messaging queue?
+
+### Answer
+A single-server messaging queue has the following drawbacks:
+
+1. **High latency:** As in the case of a single-server messaging queue, a producer or consumer acquires a lock to access the queue. Therefore, this mechanism becomes a bottleneck when many processes try to access the queue. This increases the latency of the service.
+
+2. **Low availability:** Due to the lack of replication of the messaging queue, the producer and consumer process might be unable to access the queue in events of failure. This reduces the system’s availability and reliability.   
+
+3. **Lack of durability:** Due to the absence of replication, the data in the queue might be lost in the event of a system failure.
+
+4. **Scalability:** A single-server messaging queue can handle a limited number of messages, producers, and consumers. Therefore, it is not scalable.
+
+To extend the design of a single-server messaging queue to a distributed messaging queue, we need to make extensive efforts to eliminate the drawbacks outlined above.
+
+---------------------------------------

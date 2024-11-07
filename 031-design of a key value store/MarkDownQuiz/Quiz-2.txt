@@ -1,0 +1,6 @@
+
+## Question 1
+We often keep hashes of the value (and at times, value + associated key) as metadata for data integrity checks. Should such a hash be taken after any data compression or encryption, or should it be taken before?
+### Answer
+The correct answer might depend on the specific application. Still, we can use hashes either before or after any compression or encryption. But we’ll need to do that consistently for `put` and `get` operations.
+---------------------------------------

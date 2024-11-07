@@ -1,0 +1,10 @@
+
+## Question 1
+Why don’t we upload the video directly to the encoder instead of to the server? Doesn’t the current strategy introduce an additional delay?
+### Answer
+There are several reasons why it’s a good idea to introduce a server in between the encoder and the client:
+- The client could be malicious and could abuse the encoder.
+- If the uploaded video is a duplicate, the server could filter it out.
+- Encoders will be available on a private IP address within YouTube’s network and not available for public access.
+
+---------------------------------------

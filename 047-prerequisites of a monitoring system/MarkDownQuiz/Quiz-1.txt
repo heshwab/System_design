@@ -1,0 +1,13 @@
+
+## Question 1
+What are the conventional approaches to handle failures in IT infrastructure?
+### Answer
+The two conventional approaches to handling IT infrastructure failures are the reactive and proactive approaches.
+
+In the **reactive** approach, corrective action is taken after the failure occurs. In this approach, even if DevOps takes quick action to find the cause of the error and promptly handle the failures, it causes downtime. As a result, there will be system downtime in the reactive approach, which is generally undesirable for continuously running applications.
+
+
+In a **proactive** approach, proactive actions are taken before failure occurs. Therefore, it prevents downtimes and associated losses. The proactive approach works on predicting system failures to take corrective action to avoid the failure. This approach offers better reliability by preventing downtime. 
+
+In modern services, completely avoiding problems is not possible. Something is always failing inside huge data centers and network deployments. The goal is to find the impending problems early on and design systems in such a way that service faults are invisible to the end users.
+---------------------------------------

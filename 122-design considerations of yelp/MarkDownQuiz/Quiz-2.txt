@@ -1,0 +1,6 @@
+
+## Question 1
+Can you identify a problem with the current approach?
+### Answer
+Our locations are not evenly distributed across segments, and this approach may still take a long time to run on segments with a lot of places. For example, in a city like New York, we can have lots of places even within a small radius because it is a densely-populated area. And for less populated areas, the same radius might not have enough places, and we might need to expand our radius to find more.
+---------------------------------------

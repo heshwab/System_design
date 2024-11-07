@@ -1,0 +1,42 @@
+
+## Question 1
+Can we estimate the size of the priority queue? What are the pros and cons of a centralized and distributed priority queue.
+### Answer
+**Assumption**: Let's assume that at any point, we have roughly one million URLs in the URL frontier to be crawled upon. 
+
+Let’s calculate the size of the priority queue needed to store all of these URLs. 
+    $Size\ of\ priority\ queue = 1\ million\ URLs \times 2048\ Bytes = 2.048\ GB$
+
+2.048 GB is a reasonable amount of space for a queue, indicating that we might not need to implement a distributed mechanism for the URL frontier.
+<center>
+
+![](/api/collection/10370001/4941429335392256/page/6632099624255488/image/5539922027216896?page_type=collection_lesson)
+
+
+</center>
+
+However, a centralized queue has limited read/write bandwidth and is a single point of failure. Therefore, having a sub-queue for each worker will be the best approach. 
+<center>
+
+![](/api/collection/10370001/4941429335392256/page/6632099624255488/image/5876252124905472?page_type=collection_lesson)
+
+</center>
+
+If we use our distributed queue, all workers can get data out of the same queue if they want. But having independent queues can further optimize the crawling process, especially in the case of high priority and more frequent crawls like those news websites that need more than regular workers to do the frequent crawling. This approach will inherently facilitate the case of increasing queue size.
+
+Having a single queue is beneficial for the deduplication of redundant links and better for the overall crawler resources. We’ll handle the recrawling priority and frequency another way, as explained in the next sections, for which we need the distribution mechanism.
+
+
+---------------------------------------
+
+## Question 2
+How will we distribute the URL frontier among different workers and what purpose will this serve?
+### Answer
+As was defined earlier, the URL frontier is a priority queue used in the scheduler and it holds the URLs that need to be crawled through. When we talk about its distribution, we mean taking the hash value of the hostname's URLs and mapping them to specific workers. This way, each worker will have its own sub-queue.
+
+This fulfills the following two requirements of our system:
+
+- The workers don’t individually connect to more than one host web servers at a time.
+- The workers don’t overburden the host web servers with concurrent requests because we use FIFO sub-queues.
+
+---------------------------------------

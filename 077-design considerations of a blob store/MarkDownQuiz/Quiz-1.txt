@@ -1,0 +1,9 @@
+
+## Question 1
+What if the blob size isn’t a multiple of our configured chunk size? How does the manager node know how many Bytes to read for the last chunk?
+### Answer
+If the blob size isn’t a multiple of the chunk size, the last chunk won’t be full.
+
+The manager node also keeps the size of each blob to determine the number of Bytes to read for the last chunk.
+
+---------------------------------------

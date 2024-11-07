@@ -1,0 +1,159 @@
+
+## Question 1
+Which CDN approach will be the most suitable to use when most of the web content is static?
+### Options
+
+1. Pull CDN
+Incorrect
+Use Pull CDN where web content changes frequently.
+----------------------------
+
+2. Push CDN
+Correct
+Use Push CDN where web content changes infrequently and caches in the edge proxy servers for a long period.
+----------------------------
+
+---------------------------------------------
+
+## Question 2
+**(Select all that apply.)** What are the limitations of using a public CDN?
+### Options
+
+1. An additional point of failure
+Correct
+The content hosted on CDN will not be available.
+----------------------------
+
+2. Risk of a data breach
+Correct
+There are always risks when third parties manage the data. 
+----------------------------
+
+3. Loss of control
+Correct
+When content publishes to the proxy servers, the CDN providers control it.
+----------------------------
+
+4. An additional DNS lookup
+Correct
+CDN network layer increases DNS lookup.
+----------------------------
+
+5. Increased latency
+Incorrect
+CDN is used to reduce the latency between end-users and the content. Therefore, this option can not be a limitation.
+----------------------------
+
+---------------------------------------------
+
+## Question 3
+**(Select all that apply.)** What are the main reasons for building a specialized CDN?
+### Options
+
+1. It optimizes the content delivery.
+Correct
+Specified CDN is dedicated to a particular content provider which optimizes the delivery of the requested content.
+----------------------------
+
+2. It helps us avoid the increasing cost of CDN providers.
+Correct
+The cost of CDN providers increases when we increase the cache size or add more components.
+----------------------------
+
+3. It prevents ISP intervention.
+Incorrect
+Each request comes through ISP using encrypted connections. So, ISPs can't intervene.
+----------------------------
+
+4. It reduces the hit ratio.
+Incorrect
+Specialized CDN will increase the hit ratio instead of reducing it because it is dedicated to particular content.
+----------------------------
+
+---------------------------------------------
+
+## Question 4
+Suppose you’re asked to scale the Quora system to reduce the burden of data distribution on the origin server. Which technique will you use to do this?
+### Options
+
+1. A single-tier CDN
+Incorrect
+Single tier does not reduce the burden because an origin server has to distribute the content to all CDN servers.
+----------------------------
+
+2. A multi-tier CDN
+Correct
+Using this approach, data distribution is divided into the CDN layers like an origin to parent CDN servers and parent to the following layer CDN servers.
+----------------------------
+
+3. A public CDN
+Incorrect
+The origin server will need to provide data to CDN, be it public or private.
+----------------------------
+
+4. A multi CDN
+Incorrect
+A multi-CDN combines multiple CDNs from different CDN providers into a single network. Often such a strategy is complex and expensive.
+
+----------------------------
+
+---------------------------------------------
+
+## Question 5
+**(Select all that apply.)** Why do most websites use a CDN?
+
+
+### Options
+
+1. A CDN ensures improved scalability.
+Correct
+Horizontal scaling is not a problem for the CDN.
+----------------------------
+
+2. A CDN offers protection against DDoS attacks.
+Correct
+Scrubber servers are used to prevent DDoS attacks in the CDN network.
+----------------------------
+
+3. A CDN creates a backup for all the evicted content.
+Incorrect
+Content is deleted from all storage of the specified CDN servers for consistency in the eviction process.
+----------------------------
+
+4. A CDN reduces the load on the origin server.
+Correct
+CDN reduces the burden from the origin servers like data distribution, handling massive traffic, etc.
+----------------------------
+
+5. A CDN guarantees better performance.
+Correct
+CDN is placed near the end-user, so it increases the performance by reducing latency and speeding up the request/response process.
+----------------------------
+
+---------------------------------------------
+
+## Question 6
+Which metric pair is the most suitable for finding the nearest proxy servers?
+### Options
+
+1. Traffic load, caching capacity
+Incorrect
+Caching capacity is not a relevant factor, but Traffic load is.
+----------------------------
+
+2. Request load, network distance
+Correct
+This is the best suitable pair to find the nearest proxy server.  
+----------------------------
+
+3. Location, bandwidth
+Incorrect
+Location does not describe any details, but the distance between two locations does.
+----------------------------
+
+4. Caching capacity, network distance
+Incorrect
+Caching capacity is not a relevant factor, but network distance is. 
+----------------------------
+
+---------------------------------------------

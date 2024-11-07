@@ -1,0 +1,13 @@
+
+## Question 1
+How does our system ensure that our data store will not be a bottleneck?
+### Answer
+We can ensure that our data store doesn’t become a bottleneck, using the following two approaches:
+
+1. We use a range-based sequencer in our design, which ensures basic level mapping between the servers and the short URLs. We can redirect the request to the respective database for a quick search. 
+2. As discussed above, we can also have unique IDs for various data stores and integrate them into short URLs. We can subsequently redirect requests to the respective data store for efficient request handling. 
+
+Both of these approaches ensure smooth traffic handling and mitigate the risk of the data store becoming a bottleneck.
+
+ 
+---------------------------------------

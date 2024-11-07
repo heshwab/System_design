@@ -1,0 +1,180 @@
+
+## Question 1
+**(Select the two most suitable options.)** What is a blob store best suited for?.
+
+### Options
+
+1. Storing a huge amount of data
+Correct
+
+----------------------------
+
+2. Storing unstructured data
+Correct
+
+----------------------------
+
+3. Storing structured data
+Incorrect
+Blob store is best suited for storing massive amounts of unstructured data.
+----------------------------
+
+---------------------------------------------
+
+## Question 2
+What is the core component of the blob store, according to the design lesson?
+
+### Options
+
+1. The manager node
+Correct
+
+----------------------------
+
+2. A load balancer
+Incorrect
+
+----------------------------
+
+3. A monitoring mechanism
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 3
+**(Select all that apply.)** What does the manager node contain? 
+### Options
+
+1. Data bytes
+Incorrect
+The data bytes are stored on the data nodes. Metadata node just contain the mappings not the original data bytes.
+----------------------------
+
+2. Blob to chunks mappings
+Correct
+
+----------------------------
+
+3. Chunks to data node mappings
+Correct
+
+----------------------------
+
+---------------------------------------------
+
+## Question 4
+The garbage collection process runs at the _________.
+### Options
+
+1. manager node
+Incorrect
+
+----------------------------
+
+2. data node
+Correct
+
+----------------------------
+
+3. monitoring system
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 5
+Which technique is used to list a large number of blobs?
+
+### Options
+
+1. Partitioning
+Incorrect
+
+----------------------------
+
+2. Replication
+Incorrect
+
+----------------------------
+
+3. Pagination
+Correct
+
+----------------------------
+
+---------------------------------------------
+
+## Question 6
+Which of the following is an indicator used in pagination?
+### Options
+
+1. Continuation token
+Correct
+
+----------------------------
+
+2. Offset
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 7
+**(True or False)** The blob store supports a hierarchical structure of data.
+
+### Options
+
+1. True
+Incorrect
+
+----------------------------
+
+2. False
+Correct
+It is a flat storage.
+----------------------------
+
+---------------------------------------------
+
+## Question 8
+Garbage collection is used for _________.
+### Options
+
+1. real-time latency optimization
+Correct
+
+----------------------------
+
+2. capacity optimization
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 9
+How do we achieve availability?
+
+### Options
+
+1. With synchronous replication within a storage cluster
+Incorrect
+
+----------------------------
+
+2. With asynchronous replication along the data center and different regions
+
+Incorrect
+
+----------------------------
+
+3. Both A and B
+Correct
+
+----------------------------
+
+---------------------------------------------

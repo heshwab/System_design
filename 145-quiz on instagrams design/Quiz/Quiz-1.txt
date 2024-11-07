@@ -1,0 +1,79 @@
+
+## Question 1
+If we opt for a NoSQL database to store Instagram data, which of the non-functional requirements would be **harder** to fulfill?
+### Options
+
+1. Availability
+Incorrect
+
+----------------------------
+
+2. Consistency 
+Correct
+The No-SQL database is harder to keep consistent than traditional relational databases.
+----------------------------
+
+3. Scalability 
+Incorrect
+
+----------------------------
+
+4. Latency
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 2
+Which of the following options is correct to generate photos and videos for the user's newsfeed?
+### Options
+
+1. Photos or videos posted between the _last_ and the current news feed generation request
+Correct
+
+----------------------------
+
+2. Photos or videos posted between the _first_ and the current news feed generation request
+
+Incorrect
+
+----------------------------
+
+3. Photos or videos of the last 24 hours
+Incorrect
+
+----------------------------
+
+4. None of the above
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 3
+Which approach does our design use to generate the user’s timeline?
+### Options
+
+1. Pull-based 
+Incorrect
+
+----------------------------
+
+2. Push-based
+Incorrect
+
+----------------------------
+
+3. Hybrid
+Correct
+
+----------------------------
+
+4. None of the above
+Incorrect
+
+----------------------------
+
+---------------------------------------------

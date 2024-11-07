@@ -1,0 +1,10 @@
+
+## Question 1
+What benefits could an ISP get by placing the CDN proxy servers inside their network? 
+### Answer
+* A CDN node cuts down the amount of external bandwidth that ISPs need and pay for. The SLA defined by ISPs with the proxy server providers may benefit the ISPs economically.
+
+* A CDN node improves responsiveness for the ISP’s customers, which makes the ISP’s customers happier. This gives them a competitive advantage over ISPs that don’t have a CDN node.
+
+* Bringing content closer to the users reduces data on the Internet core.
+---------------------------------------

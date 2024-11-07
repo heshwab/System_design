@@ -1,0 +1,11 @@
+
+## Question 1
+Why are NoSQL databases like Cassandra or Riak not good choices instead of MongoDB?
+### Answer
+Since our service is more read-intensive and less write-intensive, MongoDB suits our use case the best for the following reasons:
+- NoSQL databases like Cassandra, Riak, and DynamoDB need read-repair during the reading stage and hence provide slower reads to write performance.
+
+- They are leader-less NoSQL databases that provide weaker data consistency guarantees upon concurrent writes. Being a single leader database, MongoDB provides a higher read throughput as we can either read from the leader replica or follower replicas. The write operations have to pass through the leader replica. It ensures our system's availability for reading-intensive tasks even in cases where the leader dies.
+
+> Since Cassandra inherently ensures availability more than MongoDB, choosing MongoDB over Cassandra might make our system look less available. However, the time taken by the leader election algorithm is negligible compared to the time elapsed between short URL generation and its first usage, so it doesn't hamper our system's availability. 
+---------------------------------------

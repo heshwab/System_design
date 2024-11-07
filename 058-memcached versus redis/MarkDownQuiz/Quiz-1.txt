@@ -1,0 +1,26 @@
+
+## Question 1
+Based on the implementation details, which of the two frameworks (Memcached or Redis) has a striking similarity with the distributed cache that we designed in the previous lesson?
+### Answer
+The answer is Memcached. The reasons are as follows:
+* Client software chooses which cache server to use with a hashing algorithm.
+* Server software stores the values against each key using an internal hash table.
+* Least recently used (LRU) is used as the eviction policy.
+* There’s no communication between different cache servers.
+
+
+---------------------------------------
+
+## Question 2
+Why do third-party tools exist for persisting Memcached data?
+
+### Answer
+It’s because a lot of data is read and written to cache servers, and they may occasionally crash for whatever reason. After restarting, building a cache from scratch can take up to hours in specific scenarios, and that ultimately reduces system performance. Therefore, cache data may be persisted to disk to be loaded on a restart.
+---------------------------------------
+
+## Question 3
+What is the advantage of storing different data structures as compared to strings only?
+
+### Answer
+The main advantage is that Redis can modify data in place without wasting network bandwidth by downloading and uploading. It saves network bandwidth, but it also saves time and effort by avoiding the serialization and deserialization of data.
+---------------------------------------

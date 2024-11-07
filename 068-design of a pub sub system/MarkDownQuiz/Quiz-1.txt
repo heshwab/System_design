@@ -1,0 +1,14 @@
+
+## Question 1
+Is there a way to avoid maintaining a separate queue for each reader?
+### Answer
+In messaging queues, the message disappears after the reader consumes it. So, what if we add a counter for each message? The counter value decrements as a subscriber consumes the message. It does not delete the message until the counter becomes zero. Now, we don’t need to keep a separate queue for each reader.
+---------------------------------------
+
+## Question 2
+What is the problem with the previous approach?
+### Answer
+The unread messages can become a bottleneck if we use the conventional queue API. For example, if 9 out of 10 readers have consumed the message present at the start of the queue, then that message won’t be deleted until the tenth consumer has also consumed the message, and the first nine consumers won’t be able to move forward.
+
+We’ll need to change the storage interface so that consumers can independently consume data. Our system will need to keep sufficient metadata and track what information each consumer has consumed and delete a message when the information has been consumed by all consumers. It resembles with reference count mechanism in Linux's hard link of files.
+---------------------------------------

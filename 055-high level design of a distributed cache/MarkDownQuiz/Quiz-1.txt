@@ -1,0 +1,10 @@
+
+## Question 1
+The API design of the distributed cache looks exactly like the key-value store. What are the possible differences between a key-value store and a distributed cache?
+### Answer
+Some of the key differences are the following:
+- Key-value stores need to durably store data (persistence). A cache is used in addition to persistent storage to increase reading performance.
+- A cache serves data from the RAM. A key-value store writes data to non-volatile storage.
+- Key-value stores are robust and should survive failures. However, caches can crash and be populated from scratch after recovery.
+
+---------------------------------------

@@ -1,0 +1,10 @@
+
+## Question 1
+What can we do to safeguard against the kinds of faults experienced by Facebook?
+### Answer
+Some possible solutions can look like the following:
+* #key# Network verification: Network verification is the usage of network tools to investigate, troubleshoot, maintain, operate, and report to ensure that hardware, software, and network configuration will operate error-free. #key# has recently gained momentum and has shown promise in catching bugs early on. Such tools use an abstract model of the infrastructure.
+* There can be more than one layer of auditing. Second layers might use a simulator to make sure that after the configuration changes, critical network infrastructures remain available from multiple global vantage points.
+* Every effort should be taken to reduce the scope of a configuration change to avoid cascading effects.
+* Critical infrastructure might be programmed in such a way that if something bad happens, it could return to the last known good state. This is easier said than done owing to the sheer number of components.
+---------------------------------------

@@ -1,0 +1,6 @@
+
+## Question 1
+How should we handle task execution that can never be completed because of an infinite loop in the payload of that task?
+### Answer
+We need to mark and kill such tasks. So, for this purpose, we can set **time limits**. If it takes more than the specified execution cap value, we can kill the task. But it’s challenging to differentiate between a buggy task and a long task. We can handle it at the application level where the clients take care of the long tasks by saving the state at different times. Clients can also resume from that state if the task scheduler kills that task, assuming that the task contains an infinite loop.
+---------------------------------------

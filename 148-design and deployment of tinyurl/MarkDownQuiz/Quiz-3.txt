@@ -1,0 +1,18 @@
+
+## Question 1
+How does our system avoid duplicate short URL generation? 
+### Answer
+ * Computing a short URL for an already existing long URL is redundant, and the system sends the long URL to the database server to check its existence in the system. The system will check the respective entry in the cache first and then query the database. 
+ * If the short URL for the corresponding long URL is already present, the database returns the saved short URL to the application server which reroutes the requested short URL to the user.
+ * If the requested short URL is unavailable in the system, the application server requests the SUG to compute the short URL for the requested long URL. Once computed, the SUG sends back a copy of the requested short URL to the application server and another copy to the database server. 
+---------------------------------------
+
+## Question 2
+How do we ensure that two concurrent requests for a short URL do not overwrite?
+### Answer
+Concurrency in handling URL shortening requests is essential, and we achieve it as follows:
+
+1. MongoDB ensures consistency by locking and concurrency control protocols, preventing the users from modifying the same data simultaneously.
+2. In MongoDB, all the write requests go through the single leader and hence exclude the possibility of race conditions due to the serialization of requests via a single leader.
+
+---------------------------------------

@@ -1,0 +1,26 @@
+
+## Question 1
+After a request reaches a back-end server, should the response be routed back through each tier of the load balancers?
+### Answer
+No, the server can send the response directly to the routers (tier-1 LBs) through tier-3 LBs, which can forward the response from the data center. Such a response is called **direct routing** (**DR**) or **direct server return** (**DSR**).
+
+DR/DSR is typically used for non-HTTPS traffic because when TLS termination is involved, responses need to be encrypted before reaching the client, requiring them to pass back through the Layer 7 load balancer for encryption.
+---------------------------------------
+
+## Question 2
+Why don't the servers directly send the response to the routers (tier-1 LBs) instead of tier-3 LBs?
+### Answer
+Tier-3 LBs maintain some state of connection—for example, SSL encryption/decryption. This is necessary to give clients a seamless experience.
+---------------------------------------
+
+## Question 3
+According to you, which tier of LBs is more prone to bugs?
+### Answer
+Tier 3 has more complexity, which makes it more prone to bugs.
+---------------------------------------
+
+## Question 4
+The image above shows a higher number of tier-3 load balancers than that of tier-2. What do you think is the reason for such a representation?
+### Answer
+Tier 3 performs application-specific analysis and substantially more sophisticated computations. Therefore, handling the same number of queries as tier 2 requires a higher number of machines. Furthermore, tier-3 LBs maintain the state of a large number of application servers, which may not be possible using the same number of LBs as tier 2.
+---------------------------------------

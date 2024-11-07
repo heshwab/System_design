@@ -1,0 +1,16 @@
+
+## Question 1
+With reference to the throughput numbers given above, what will be your reply if an interviewer says that they think that for a MySQL database, the average count of queries per second handled is 2000?
+### Answer
+2000 is in the same order of magnitude as 1000. If, for some use cases, we need more precision, we might use a range such as, say, 250 queries for complex queries, 1750 for simpler queries, and 1000 on average.
+---------------------------------------
+
+## Question 2
+With reference to the table above, why does a key-value store serve an order of magnitude more queries per second as compared to a MySQL database?
+### Answer
+A typical key-value store has a simpler API (`put` and `get`) compared to a relational database query that needs to go through query planning before query execution. On the same lines, in-memory caches have `read` and `write` operations, which are again simpler than a database query. If such a cache is primarily used for reading, it can serve even more requests per second.
+
+Like the memory hierarchy inside a server, we need to keep the relative benefits of these systems (relational database, key-value store, and in-memory caches) in perspective. Doing so allows us to use some reasonable number for databases and then use the order of magnitude difference to develop related numbers for key-value stores and caches.
+
+
+---------------------------------------

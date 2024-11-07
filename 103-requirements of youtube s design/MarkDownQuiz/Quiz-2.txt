@@ -1,0 +1,11 @@
+
+## Question 1
+If 480 Gbps of bandwidth is required to satisfy uploading needs, how much bandwidth would be required to stream videos? Assume each minute of video requires 10 MB of bandwidth on average.
+
+
+**Hint**: The `upload:view` ratio is provided.
+### Answer
+For every video uploaded, 300 videos are watched. Therefore, the equation becomes this:
+
+$total\ number\ of\ viewing\ hours\ per\ minutes\ \times size\ in\ MB\ of\ each\ minute\ \times view\ ratio = 500 \frac{hours}{minute} \times 60 \frac{minutes}{hour} \times 10 \frac{MB}{minute} \times 300 = 90 \frac{TB}{minute} \times 8\ bits = 720 \frac{Tb}{minute} = 12\ Tbps$
+---------------------------------------

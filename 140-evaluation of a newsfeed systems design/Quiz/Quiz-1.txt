@@ -1,0 +1,108 @@
+
+## Question 1
+Which component is responsible for storing relationships between users, their friends, and followers?
+### Options
+
+1. The users database
+Incorrect
+
+----------------------------
+
+2. The graph database
+
+Correct
+
+----------------------------
+
+3. The posts database
+Incorrect
+
+----------------------------
+
+4. None of the above
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 2
+Where are fully constructed and ranked newsfeeds stored?
+
+### Options
+
+1. The published feeds cache
+Incorrect
+
+----------------------------
+
+2. The newsfeed cache
+Correct
+
+----------------------------
+
+3. The posts cache
+Incorrect
+
+----------------------------
+
+4. None of the above
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 3
+When do the web servers call the posts service? 
+
+### Options
+
+1. When new posts are created
+Correct
+
+----------------------------
+
+2. When a request for a newsfeed is received
+Incorrect
+
+----------------------------
+
+3. When users are to be notified due to some failure events 
+Incorrect
+
+----------------------------
+
+4. All of the above
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 4
+Which option below is stored in blob storage?
+
+### Options
+
+1. Comments on posts 
+Incorrect
+
+----------------------------
+
+2. Count of likes and dislikes
+Incorrect
+
+----------------------------
+
+3. Media content
+Correct
+
+----------------------------
+
+4. All of the above
+Incorrect
+
+----------------------------
+
+---------------------------------------------

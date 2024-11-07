@@ -1,0 +1,88 @@
+
+## Question 1
+What kind of problem would occur if our system created a counter with a few shards for a post from a user with one million followers?
+### Options
+
+1. High read contention
+Incorrect
+
+----------------------------
+
+2. High write contention
+Correct
+
+----------------------------
+
+3. Users face delays on a read request
+Incorrect
+
+----------------------------
+
+4. Users get a quick response on the liked post
+
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 2
+**(Select all that apply.)** What problem might arise if shards are selected in an order (sequentially) rather than randomly?
+
+### Options
+
+1. The write request queue increases.
+Correct
+
+----------------------------
+
+2. Maximum shard utilization decreases.
+
+Correct
+
+----------------------------
+
+3. One-by-one selection of shards will take more time.
+
+Incorrect
+This statement is not true because only one increment will give the next shard. The time complexity of selecting shards remains O(1).
+----------------------------
+
+4. The user will not get quick responses.
+
+Correct
+
+----------------------------
+
+---------------------------------------------
+
+## Question 3
+**(Select all that apply.)** Which situation needs a larger number of sharded counters to handle the traffic on YouTube?
+
+
+### Options
+
+1. A video posted by a channel with millions of subscribers
+Correct
+
+----------------------------
+
+2. A video with a few likes over a long period of time
+
+Incorrect
+
+----------------------------
+
+3. A video with millions of views but a few dislikes
+
+Correct
+
+----------------------------
+
+4. Long videos posted by a channel with a few subscribers
+
+Incorrect
+
+----------------------------
+
+---------------------------------------------

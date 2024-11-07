@@ -1,0 +1,10 @@
+
+## Question 1
+Assuming YouTube stores videos in five different qualities and the average size of a one-minute video is 6 MB, what would the estimated storage requirements per minute be?
+### Answer
+Since we need 6 MBs per minute and we need to store files in five different formats, the overall requirement is $5 \times 6 MB = 30\ MBs.$
+
+Next, we’ll calculate the below value:
+$Number\ of\ hours\ uploaded\ to\ YouTube/min\ \times Number\ of\ minutes\ per\ hour\ \times storage\ requirement\ per\ minute\ = 500 \frac{hours}{minute} \times 60 \frac{minutes}{hour} \times 30 \frac{MB}{minute} = 900 \frac{GB}{minute}
+$
+---------------------------------------

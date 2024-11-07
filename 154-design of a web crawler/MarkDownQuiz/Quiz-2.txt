@@ -1,0 +1,19 @@
+
+## Question 1
+How does the crawler handle URLs with variable priorities?
+### Answer
+The crawler has to be vigilant enough at each stage to differentiate between various priority levels of URLs.
+
+Let’s see how the crawler design handles such cases stage by stage:
+
+1. Since we implement our URL frontier as a priority queue of a scheduler, it automatically handles the placement based on parameter values. We have chosen the fault tolerance and periodicity parameters as priority indicators for our URLs.
+
+   The assignment of these parameters depends on the nature of the web pages’ content. If it is a news web page, crawling through it multiple times in a day is appropriate and required for our index to be up-to-date. Any ordinary web page with occasional updates happening might have a standard visit frequency of, let’s say, two weeks.
+
+ 2. Similarly, at the HTML-fetcher level where the crawler is communicating with the host server based on the `robots.txt` guidelines, it can communicate the concerned parameter’s value for the fetched URLs back to the scheduler in the storing phase.
+
+Instead of having indicators associated with the URLs, another solution can be to have separate queues for different priorities. We can then dequeue from these queues based on the priorities assigned to them. This approach just requires the URL placement in the respective queue and doesn’t need scripts to schedule based on the extra parameters associated.
+
+It all depends on the scale of our crawling application.
+
+---------------------------------------

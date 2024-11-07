@@ -1,0 +1,10 @@
+
+
+domain: messaging
+descriptors:
+   -key: message_type
+    value: marketing
+    rate_limit:
+               unit: day
+               request_per_unit: 5
+

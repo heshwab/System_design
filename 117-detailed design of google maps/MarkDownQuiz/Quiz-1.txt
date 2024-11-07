@@ -1,0 +1,7 @@
+
+## Question 1
+
+Many traffic conditions are transitory (like stopping at a signal), so updating the graph very often wouldn’t scale well because it requires excessive processing. What could be the solution to this problem?
+### Answer
+To detect transitory and normal conditions, we keep two copies of all relevant data (weights): one for normal conditions and the other for transitory conditions. That way, we won’t have to do excessive processing.
+---------------------------------------

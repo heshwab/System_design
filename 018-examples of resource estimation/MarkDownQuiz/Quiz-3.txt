@@ -1,0 +1,12 @@
+
+## Question 1
+We came up with the number of 93 PB for storage needs per year. Is this number plausible?
+### Answer
+In 2023, 20 TB disks are readily available. That means we need about 5,000 disks to host 93 PB. Even if we incorporate three-way replication, we’ll need just 15,000 disks. These many disks at a retail price of $400 will cost $6 million (though often organizations get robust volume discounts on such items).
+---------------------------------------
+
+## Question 2
+Isn't need for the network bandwidth of ~ 400 Gbps too high?
+### Answer
+Many data centers of an organization are connected with high speed networks such as 1Tbps. Though our bandwidth needs towards the global Internet might be high. But Twitter like organizations will have multiple, geographically dispersed data centers whose collective bandwidth can easily be matched what we calculated.
+---------------------------------------

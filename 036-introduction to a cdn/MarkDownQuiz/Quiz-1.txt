@@ -1,0 +1,8 @@
+
+## Question 1
+Does a CDN cache all content from the origin server?
+### Answer
+Not likely. A CDN caches a considerable portion of the content depending on its capabilities, and it mostly caches the #key# static content: The content that isn't frequently changed is known as static content. #key#.
+
+It also depends on the size of the content. For example, it might be possible for Netflix to store more than 90% of its movies in the CDN, while this might not be feasible for a service like YouTube due to the humongous volume of content.
+---------------------------------------

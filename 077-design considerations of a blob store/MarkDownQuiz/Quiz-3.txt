@@ -1,0 +1,7 @@
+
+## Question 1
+How do we know which Bytes we have read first and which Bytes we have to read next?
+
+### Answer
+We can use an **offset** value to keep track of the Byte from which we need to start reading again.
+---------------------------------------

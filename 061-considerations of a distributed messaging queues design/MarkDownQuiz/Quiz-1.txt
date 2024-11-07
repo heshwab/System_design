@@ -1,0 +1,7 @@
+
+## Question 1
+Who’ll be responsible for providing the sequence numbers?
+### Answer
+The system provides essential libraries or APIs to the client to give sequence numbers to the messages produced at the client side.
+
+---------------------------------------

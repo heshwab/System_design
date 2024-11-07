@@ -1,0 +1,18 @@
+
+## Question 1
+How does a random host within a cluster replicate data—that is, messages—in the queues on other hosts within the same cluster?
+### Answer
+
+
+Each host consists of mapping between the queues and the hosts within a cluster, making the replication easier. 
+
+Assume that we have a cluster, say Y,  having hosts A, B, and C. This cluster has two queues with IDs 101 and 103 stored on different hosts, as shown in the following table. This table is stored on each host within the cluster Y.  When a random host receives a message, say host C, for a queue having ID 103, host C replicates this message on the other hosts where the queue 103 is stored, i.e., Node A and Node B. 
+
+
+
+<center> 
+
+![](/api/collection/10370001/4941429335392256/page/4953511267139584/image/5781436737257472?page_type=collection_lesson)
+
+</center>
+---------------------------------------

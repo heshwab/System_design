@@ -1,0 +1,6 @@
+
+## Question 1
+What are the shortcomings of the push approach?
+### Answer
+Consider an account that belongs to a celebrity, like Cristiano Ronaldo, who has over 400 million followers. So if he posts a photo or a video, we will push the links of the photo/video to 400 million+ users, which is inefficient.
+---------------------------------------

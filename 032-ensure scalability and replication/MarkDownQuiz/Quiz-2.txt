@@ -1,0 +1,6 @@
+
+## Question 1
+Does the primary-secondary approach fulfill the requirements of the key-value store that we defined in the System Design: The Key-value Store lesson?
+### Answer
+One of our requirements is that we need the ability to always write. This approach is good for the always read option. However, this approach doesn’t include the ability to always write because it will overload the primary storage. Moreover, if a primary server fails, we need to upgrade a secondary to a primary. The availability of write will suffer as we won’t allow writes during the switch-over time.
+---------------------------------------

@@ -1,0 +1,11 @@
+
+## Question 1
+Suppose that a message sent earlier arrives late due to a network delay. What would be the proper approach to handle such a situation?
+
+
+### Answer
+The simple solution in such cases is to reorder the queue. Two scenarios can arise from this. First, reordering puts the messages in the correct order. Second, we’ve already handed out newer messages to the consumers.
+
+If an old message comes when we’ve already handed out a newer message, we put it in a special queue, and the client handles that situation. The client may later decide whether to consume the message if the message does not affect the intended operation or discard it if it's not needed. 
+
+---------------------------------------

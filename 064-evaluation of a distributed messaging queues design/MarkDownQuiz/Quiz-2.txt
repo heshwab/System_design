@@ -1,0 +1,6 @@
+
+## Question 1
+What happens when the visibility timeout of a specific message expires and the consumer is still busy processing the message?
+### Answer
+The message becomes visible, and another worker can receive the message, thereby duplicating the processing. To avoid such a situation, we ensure that the application sets a safe threshold for visibility timeout.
+---------------------------------------

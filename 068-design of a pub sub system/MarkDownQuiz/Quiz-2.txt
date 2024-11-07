@@ -1,0 +1,37 @@
+
+## Question 1
+Strict ordering ensures that the messages are stored in the order in which they are produced. How can we ensure strict ordering for our messages?
+### Answer
+We’ll assign each partition a unique ID, `partition_ID`. The user can provide the `partition_ID` while writing into the system. In this way, the messages will be sent to the specified partition, and the ordering will be strict. Our API call to write into the pub-sub system looks like this:
+
+```txt
+write(topic_ID, partition_ID, message)
+```
+
+If the user does not provide the `partition_ID`, we’ll use the weighted round-robin algorithm to decide which message has to be sent to which partition.
+
+It might seem strange to give the ability to choose a partition to the client of pub-sub. However, such a facility can be the basis from where clients can get data for some specific time period—for example, getting data from yesterday.  For simplicity, we won’t include time-based reading in our design.
+---------------------------------------
+
+## Question 2
+What problems can arise if all partitions are on the same broker?
+### Answer
+If the broker fails or dies, all the messages in the partitions will be lost. To avoid this, we need to make sure that the partitions are spread on different brokers.
+---------------------------------------
+
+## Question 3
+Why can’t we use blob stores like S3 to keep messages, instead of the broker’s local storage?
+### Answer
+Blob stores like S3 are not optimized for writing and reading short-sized data. If our data is geo-replicated, the above problem is exacerbated.
+
+Therefore, we used the server’s local persistent store with append-based writing. Traditional hard disks are specially tuned to provide good write performance with writing to contiguous tracks or sectors. Reading throughput and latency is also good for contiguous regions of the disk because it allows extensive data caching.
+
+---------------------------------------
+
+## Question 4
+If we use a round-robin algorithm to send messages to a partition, how does the system know where to look when it is time to read?
+### Answer
+Our system will need to keep appropriate metadata persistently. This metadata will keep mappings between the logical index of segment or messages to the server identity or partition identifier.
+
+We’ll discuss consumer manager later in the lesson, which will keep the required information.
+---------------------------------------

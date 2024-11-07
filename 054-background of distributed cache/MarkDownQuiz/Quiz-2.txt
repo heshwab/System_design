@@ -1,0 +1,6 @@
+
+## Question 1
+What will be the behavior of cache clients to an access request if one of the cache servers is dead?
+### Answer
+Since the data within the cache servers will no longer be available, cache clients will mark that access request as a cache miss.
+---------------------------------------

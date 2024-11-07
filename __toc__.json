@@ -1,0 +1,1286 @@
+{
+    "course": "Grokking the Modern System Design Interview",
+    "url": "https://www.educative.io/courses/grokking-the-system-design-interview?showContent=true",
+    "toc": [
+        {
+            "category": "System Design Interviews",
+            "topics": [
+                [
+                    "Getting Ready for the System Design Interview",
+                    "000-getting ready for the system design interview",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/4771234193080320?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/getting-ready-for-the-system-design-interview?showContent=true"
+                ],
+                [
+                    "Key Concepts to Prepare for the System Design Interview",
+                    "001-key concepts to prepare for the system design interview",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/4705505809661952?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/key-concepts-to-prepare-for-the-system-design-interview?showContent=true"
+                ],
+                [
+                    "Resources to Prepare for a System Design Interview",
+                    "002-resources to prepare for a system design interview",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5546916426809344?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/resources-to-prepare-for-a-system-design-interview?showContent=true"
+                ],
+                [
+                    "The Do\u2019s and Don\u2019ts of the System Design Interview",
+                    "003-the dos and donts of the system design interview",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6043988183744512?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/the-dos-and-donts-of-the-system-design-interview?showContent=true"
+                ],
+                [
+                    "Let AI Evaluate your System Design Interview Preparation",
+                    "004-let ai evaluate your system design interview preparation",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6145339853373440?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/let-ai-evaluate-your-system-design-interview-preparation?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Introduction",
+            "topics": [
+                [
+                    "Introduction to Modern System Design",
+                    "005-introduction to modern system design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6516310599270400?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/introduction-to-modern-system-design?showContent=true"
+                ],
+                [
+                    "Course Structure for Modern System Design",
+                    "006-course structure for modern system design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6462916757028864?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/course-structure-for-modern-system-design?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Abstractions",
+            "topics": [
+                [
+                    "Why Are Abstractions Important?",
+                    "007-why are abstractions important",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6539129789087744?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/why-are-abstractions-important?showContent=true"
+                ],
+                [
+                    "Network Abstractions: Remote Procedure Calls",
+                    "008-network abstractions remote procedure calls",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6670339758620672?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/network-abstractions-remote-procedure-calls?showContent=true"
+                ],
+                [
+                    "Spectrum of Consistency Models",
+                    "009-spectrum of consistency models",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5131359030345728?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/spectrum-of-consistency-models?showContent=true"
+                ],
+                [
+                    "The Spectrum of Failure Models",
+                    "010-the spectrum of failure models",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5023279047245824?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/the-spectrum-of-failure-models?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Non-functional System Characteristics",
+            "topics": [
+                [
+                    "Availability",
+                    "011-availability",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5983424656965632?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/availability?showContent=true"
+                ],
+                [
+                    "Reliability",
+                    "012-reliability",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5173989319639040?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/reliability?showContent=true"
+                ],
+                [
+                    "Scalability",
+                    "013-scalability",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5991400583200768?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/scalability?showContent=true"
+                ],
+                [
+                    "Maintainability",
+                    "014-maintainability",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6540133490229248?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/maintainability?showContent=true"
+                ],
+                [
+                    "Fault Tolerance",
+                    "015-fault tolerance",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6693927511392256?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/fault-tolerance?showContent=true"
+                ],
+                [
+                    "Let AI Evaluate Your Understanding of Non-Functional Requirements",
+                    "016-let ai evaluate your understanding of non functional requirements",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6669534840487936?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/let-ai-evaluate-your-understanding-of-non-functional-requirements?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Back-of-the-envelope Calculations",
+            "topics": [
+                [
+                    "Put Back-of-the-envelope Numbers in Perspective",
+                    "017-put back of the envelope numbers in perspective",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5711642666467328?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/put-back-of-the-envelope-numbers-in-perspective?showContent=true"
+                ],
+                [
+                    "Examples of Resource Estimation",
+                    "018-examples of resource estimation",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/4766860129599488?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/examples-of-resource-estimation?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Building Blocks",
+            "topics": [
+                [
+                    "Introduction to Building Blocks for Modern System Design",
+                    "019-introduction to building blocks for modern system design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6061247618875392?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/introduction-to-building-blocks-for-modern-system-design?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Domain Name System",
+            "topics": [
+                [
+                    "Introduction to Domain Name System (DNS)",
+                    "020-introduction to domain name system dns",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5728619204182016?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/introduction-to-domain-name-system-dns?showContent=true"
+                ],
+                [
+                    "How the Domain Name System Works",
+                    "021-how the domain name system works",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/4570386150981632?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/how-the-domain-name-system-works?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Load Balancers",
+            "topics": [
+                [
+                    "Introduction to Load Balancers",
+                    "022-introduction to load balancers",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/4521972679049216?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/introduction-to-load-balancers?showContent=true"
+                ],
+                [
+                    "Global and Local Load Balancing",
+                    "023-global and local load balancing",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5238392749293568?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/global-and-local-load-balancing?showContent=true"
+                ],
+                [
+                    "Advanced Details of Load Balancers",
+                    "024-advanced details of load balancers",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6596709789990912?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/advanced-details-of-load-balancers?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Databases",
+            "topics": [
+                [
+                    "Introduction to Databases",
+                    "025-introduction to databases",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/4901035478351872?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/introduction-to-databases?showContent=true"
+                ],
+                [
+                    "Types of Databases",
+                    "026-types of databases",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6521598450597888?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/types-of-databases?showContent=true"
+                ],
+                [
+                    "Data Replication",
+                    "027-data replication",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5241733675220992?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/data-replication?showContent=true"
+                ],
+                [
+                    "Data Partitioning",
+                    "028-data partitioning",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6254160546103296?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/data-partitioning?showContent=true"
+                ],
+                [
+                    "Trade-offs in Databases",
+                    "029-trade offs in databases",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5531655174881280?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/trade-offs-in-databases?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Key-value Store",
+            "topics": [
+                [
+                    "System Design: The Key-value Store",
+                    "030-system design the key value store",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/4747701493432320?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/system-design-the-key-value-store?showContent=true"
+                ],
+                [
+                    "Design of a Key-value Store",
+                    "031-design of a key value store",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5610927277211648?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/design-of-a-key-value-store?showContent=true"
+                ],
+                [
+                    "Ensure Scalability and Replication",
+                    "032-ensure scalability and replication",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5256346714243072?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/ensure-scalability-and-replication?showContent=true"
+                ],
+                [
+                    "Versioning Data and Achieving Configurability",
+                    "033-versioning data and achieving configurability",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5979802812547072?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/versioning-data-and-achieving-configurability?showContent=true"
+                ],
+                [
+                    "Enable Fault Tolerance and Failure Detection",
+                    "034-enable fault tolerance and failure detection",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5842597234343936?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/enable-fault-tolerance-and-failure-detection?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Content Delivery Network  (CDN)",
+            "topics": [
+                [
+                    "System Design: The Content Delivery Network (CDN)",
+                    "035-system design the content delivery network cdn",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6624266925899776?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/system-design-the-content-delivery-network-cdn?showContent=true"
+                ],
+                [
+                    "Introduction to a CDN",
+                    "036-introduction to a cdn",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5560114131501056?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/introduction-to-a-cdn?showContent=true"
+                ],
+                [
+                    "Design of a CDN",
+                    "037-design of a cdn",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5883973992972288?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/design-of-a-cdn?showContent=true"
+                ],
+                [
+                    "In-depth Investigation of CDN: Part 1",
+                    "038-in depth investigation of cdn part 1",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5267936226312192?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/in-depth-investigation-of-cdn-part-1?showContent=true"
+                ],
+                [
+                    "In-depth Investigation of CDN: Part 2",
+                    "039-in depth investigation of cdn part 2",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5382114350727168?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/in-depth-investigation-of-cdn-part-2?showContent=true"
+                ],
+                [
+                    "Evaluation of CDN's Design",
+                    "040-evaluation of cdn s design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5971383947624448?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/evaluation-of-cdns-design?showContent=true"
+                ],
+                [
+                    "Quiz on CDN's Design",
+                    "041-quiz on cdn s design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6624605451583488?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/quiz-on-cdns-design?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Sequencer",
+            "topics": [
+                [
+                    "System Design: Sequencer",
+                    "042-system design sequencer",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6499939719053312?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/system-design-sequencer?showContent=true"
+                ],
+                [
+                    "Design of a Unique ID Generator",
+                    "043-design of a unique id generator",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5216880444309504?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/design-of-a-unique-id-generator?showContent=true"
+                ],
+                [
+                    "Unique IDs with Causality",
+                    "044-unique ids with causality",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5836711686307840?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/unique-ids-with-causality?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Distributed  Monitoring",
+            "topics": [
+                [
+                    "System Design: Distributed Monitoring",
+                    "045-system design distributed monitoring",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6310983387840512?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/system-design-distributed-monitoring?showContent=true"
+                ],
+                [
+                    "Introduction to Distributed Monitoring",
+                    "046-introduction to distributed monitoring",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/4721220683038720?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/introduction-to-distributed-monitoring?showContent=true"
+                ],
+                [
+                    "Prerequisites of a Monitoring System",
+                    "047-prerequisites of a monitoring system",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6071737539624960?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/prerequisites-of-a-monitoring-system?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Monitor Server-side Errors",
+            "topics": [
+                [
+                    "Design of a Monitoring System",
+                    "048-design of a monitoring system",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5485445638520832?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/design-of-a-monitoring-system?showContent=true"
+                ],
+                [
+                    "Detailed Design of a Monitoring System",
+                    "049-detailed design of a monitoring system",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6718061809238016?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/detailed-design-of-a-monitoring-system?showContent=true"
+                ],
+                [
+                    "Visualize Data in a Monitoring System",
+                    "050-visualize data in a monitoring system",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5232629720285184?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/visualize-data-in-a-monitoring-system?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Monitor Client-side Errors",
+            "topics": [
+                [
+                    "Focus on Client-side Errors in a Monitoring System",
+                    "051-focus on client side errors in a monitoring system",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/4768611427680256?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/focus-on-client-side-errors-in-a-monitoring-system?showContent=true"
+                ],
+                [
+                    "Design of a Client-side Monitoring System",
+                    "052-design of a client side monitoring system",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/4769741293486080?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/design-of-a-client-side-monitoring-system?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Distributed Cache",
+            "topics": [
+                [
+                    "System Design: The Distributed Cache",
+                    "053-system design the distributed cache",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5053577315221504?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/system-design-the-distributed-cache?showContent=true"
+                ],
+                [
+                    "Background of Distributed Cache",
+                    "054-background of distributed cache",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5353674067148800?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/background-of-distributed-cache?showContent=true"
+                ],
+                [
+                    "High-level Design of a Distributed Cache",
+                    "055-high level design of a distributed cache",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5103962818084864?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/high-level-design-of-a-distributed-cache?showContent=true"
+                ],
+                [
+                    "Detailed Design of a Distributed Cache",
+                    "056-detailed design of a distributed cache",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/4731033765543936?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/detailed-design-of-a-distributed-cache?showContent=true"
+                ],
+                [
+                    "Evaluation of a Distributed Cache's Design",
+                    "057-evaluation of a distributed cache s design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6094096892690432?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/evaluation-of-a-distributed-caches-design?showContent=true"
+                ],
+                [
+                    "Memcached versus Redis",
+                    "058-memcached versus redis",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5441771256938496?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/memcached-versus-redis?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Distributed Messaging Queue",
+            "topics": [
+                [
+                    "System Design: The Distributed Messaging Queue",
+                    "059-system design the distributed messaging queue",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5148400467312640?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/system-design-the-distributed-messaging-queue?showContent=true"
+                ],
+                [
+                    "Requirements of a Distributed Messaging Queue\u2019s Design",
+                    "060-requirements of a distributed messaging queues design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5806944861814784?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/requirements-of-a-distributed-messaging-queues-design?showContent=true"
+                ],
+                [
+                    "Considerations of a Distributed Messaging Queue\u2019s Design",
+                    "061-considerations of a distributed messaging queues design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6191662786674688?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/considerations-of-a-distributed-messaging-queues-design?showContent=true"
+                ],
+                [
+                    "Design of a Distributed Messaging Queue: Part 1",
+                    "062-design of a distributed messaging queue part 1",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6330012742975488?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/design-of-a-distributed-messaging-queue-part-1?showContent=true"
+                ],
+                [
+                    "Design of a Distributed Messaging Queue: Part 2",
+                    "063-design of a distributed messaging queue part 2",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/4953511267139584?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/design-of-a-distributed-messaging-queue-part-2?showContent=true"
+                ],
+                [
+                    "Evaluation of a Distributed Messaging Queue\u2019s Design",
+                    "064-evaluation of a distributed messaging queues design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/4654974423793664?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/evaluation-of-a-distributed-messaging-queues-design?showContent=true"
+                ],
+                [
+                    "Quiz on the Distributed Messaging Queue\u2019s Design",
+                    "065-quiz on the distributed messaging queues design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5261732032806912?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/quiz-on-the-distributed-messaging-queues-design?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Pub-sub",
+            "topics": [
+                [
+                    "System Design: The Pub-sub Abstraction",
+                    "066-system design the pub sub abstraction",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/4996814243889152?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/system-design-the-pub-sub-abstraction?showContent=true"
+                ],
+                [
+                    "Introduction to Pub-sub",
+                    "067-introduction to pub sub",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5155663642099712?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/introduction-to-pub-sub?showContent=true"
+                ],
+                [
+                    "Design of a Pub-sub System",
+                    "068-design of a pub sub system",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5367894619193344?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/design-of-a-pub-sub-system?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Rate Limiter",
+            "topics": [
+                [
+                    "System Design: The Rate Limiter",
+                    "069-system design the rate limiter",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/4770834422169600?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/system-design-the-rate-limiter?showContent=true"
+                ],
+                [
+                    "Requirements of a Rate Limiter\u2019s Design",
+                    "070-requirements of a rate limiters design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5887506125422592?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/requirements-of-a-rate-limiters-design?showContent=true"
+                ],
+                [
+                    "Design of a Rate Limiter",
+                    "071-design of a rate limiter",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5287353329647616?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/design-of-a-rate-limiter?showContent=true"
+                ],
+                [
+                    "Rate Limiter Algorithms",
+                    "072-rate limiter algorithms",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5447913559293952?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/rate-limiter-algorithms?showContent=true"
+                ],
+                [
+                    "Quiz on the Rate Limiter\u2019s Design",
+                    "073-quiz on the rate limiters design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6564352194248704?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/quiz-on-the-rate-limiters-design?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Blob Store",
+            "topics": [
+                [
+                    "System Design: A Blob Store",
+                    "074-system design a blob store",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/4862646238576640?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/system-design-a-blob-store?showContent=true"
+                ],
+                [
+                    "Requirements of a Blob Store's Design",
+                    "075-requirements of a blob store s design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5129194917068800?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/requirements-of-a-blob-stores-design?showContent=true"
+                ],
+                [
+                    "Design of a Blob Store",
+                    "076-design of a blob store",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/4910790825476096?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/design-of-a-blob-store?showContent=true"
+                ],
+                [
+                    "Design Considerations of a Blob Store",
+                    "077-design considerations of a blob store",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/4593802865541120?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/design-considerations-of-a-blob-store?showContent=true"
+                ],
+                [
+                    "Evaluation of a Blob Store's Design",
+                    "078-evaluation of a blob store s design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5348783000387584?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/evaluation-of-a-blob-stores-design?showContent=true"
+                ],
+                [
+                    "Quiz on the Blob Store's Design",
+                    "079-quiz on the blob store s design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6060039001604096?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/quiz-on-the-blob-stores-design?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Distributed Search",
+            "topics": [
+                [
+                    "System Design: The Distributed Search",
+                    "080-system design the distributed search",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5400897294696448?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/system-design-the-distributed-search?showContent=true"
+                ],
+                [
+                    "Requirements of a Distributed Search System's Design",
+                    "081-requirements of a distributed search system s design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5706146547761152?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/requirements-of-a-distributed-search-systems-design?showContent=true"
+                ],
+                [
+                    "Indexing in a Distributed Search",
+                    "082-indexing in a distributed search",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6595902341120000?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/indexing-in-a-distributed-search?showContent=true"
+                ],
+                [
+                    "Design of a Distributed Search",
+                    "083-design of a distributed search",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6573171574046720?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/design-of-a-distributed-search?showContent=true"
+                ],
+                [
+                    "Scaling Search and Indexing",
+                    "084-scaling search and indexing",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5899429382455296?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/scaling-search-and-indexing?showContent=true"
+                ],
+                [
+                    "Evaluation of a Distributed Search's Design",
+                    "085-evaluation of a distributed search s design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/4962799423324160?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/evaluation-of-a-distributed-searchs-design?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Distributed Logging",
+            "topics": [
+                [
+                    "System Design: Distributed Logging",
+                    "086-system design distributed logging",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6747547922333696?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/system-design-distributed-logging?showContent=true"
+                ],
+                [
+                    "Introduction to Distributed Logging",
+                    "087-introduction to distributed logging",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5621964999229440?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/introduction-to-distributed-logging?showContent=true"
+                ],
+                [
+                    "Design of a Distributed Logging Service",
+                    "088-design of a distributed logging service",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/4835612456124416?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/design-of-a-distributed-logging-service?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Distributed Task Scheduler",
+            "topics": [
+                [
+                    "System Design: The Distributed Task Scheduler",
+                    "089-system design the distributed task scheduler",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6152021643624448?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/system-design-the-distributed-task-scheduler?showContent=true"
+                ],
+                [
+                    "Requirements of a Distributed Task Scheduler's Design",
+                    "090-requirements of a distributed task scheduler s design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6681764793942016?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/requirements-of-a-distributed-task-schedulers-design?showContent=true"
+                ],
+                [
+                    "Design of a Distributed Task Scheduler",
+                    "091-design of a distributed task scheduler",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/4969977353863168?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/design-of-a-distributed-task-scheduler?showContent=true"
+                ],
+                [
+                    "Design Considerations of a Distributed Task Scheduler",
+                    "092-design considerations of a distributed task scheduler",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/4856850956156928?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/design-considerations-of-a-distributed-task-scheduler?showContent=true"
+                ],
+                [
+                    "Evaluation of a Distributed Task Scheduler's Design",
+                    "093-evaluation of a distributed task scheduler s design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5231625754902528?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/evaluation-of-a-distributed-task-schedulers-design?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Sharded Counters",
+            "topics": [
+                [
+                    "System Design: The Sharded Counters",
+                    "094-system design the sharded counters",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6071347163955200?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/system-design-the-sharded-counters?showContent=true"
+                ],
+                [
+                    "High-level Design of Sharded Counters",
+                    "095-high level design of sharded counters",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6126387596886016?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/high-level-design-of-sharded-counters?showContent=true"
+                ],
+                [
+                    "Detailed Design of Sharded Counters",
+                    "096-detailed design of sharded counters",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5076411916484608?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/detailed-design-of-sharded-counters?showContent=true"
+                ],
+                [
+                    "Quiz on the Sharded Counters' Design",
+                    "097-quiz on the sharded counters design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5659634509021184?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/quiz-on-the-sharded-counters-design?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Concluding the Building Blocks Discussion",
+            "topics": [
+                [
+                    "AI Evaluation of Building Blocks in E-Commerce Platform",
+                    "098-ai evaluation of building blocks in e commerce platform",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5469233437868032?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/ai-evaluation-of-building-blocks-in-e-commerce-platform?showContent=true"
+                ],
+                [
+                    "AI Evaluation of Building Blocks in Online Education System",
+                    "099-ai evaluation of building blocks in online education system",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6068850835718144?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/ai-evaluation-of-building-blocks-in-online-education-system?showContent=true"
+                ],
+                [
+                    "Wrapping Up the Building Blocks Discussion",
+                    "100-wrapping up the building blocks discussion",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/4682017479852032?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/wrapping-up-the-building-blocks-discussion?showContent=true"
+                ],
+                [
+                    "The RESHADED Approach for System Design",
+                    "101-the reshaded approach for system design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/4564800009142272?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/the-reshaded-approach-for-system-design?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Design YouTube",
+            "topics": [
+                [
+                    "System Design: YouTube",
+                    "102-system design youtube",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5360542734090240?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/system-design-youtube?showContent=true"
+                ],
+                [
+                    "Requirements of YouTube's Design",
+                    "103-requirements of youtube s design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5574324458618880?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/requirements-of-youtubes-design?showContent=true"
+                ],
+                [
+                    "Design of YouTube",
+                    "104-design of youtube",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5334361548783616?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/design-of-youtube?showContent=true"
+                ],
+                [
+                    "Evaluation of YouTube's Design",
+                    "105-evaluation of youtube s design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/4932171382390784?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/evaluation-of-youtubes-design?showContent=true"
+                ],
+                [
+                    "The Reality Is More Complicated",
+                    "106-the reality is more complicated",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5471711817891840?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/the-reality-is-more-complicated?showContent=true"
+                ],
+                [
+                    "Quiz on Netflix's Design",
+                    "107-quiz on netflix s design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6669179066777600?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/quiz-on-netflixs-design?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Design Quora",
+            "topics": [
+                [
+                    "System Design: Quora",
+                    "108-system design quora",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5132399700869120?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/system-design-quora?showContent=true"
+                ],
+                [
+                    "Requirements of Quora's Design",
+                    "109-requirements of quora s design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6254998790340608?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/requirements-of-quoras-design?showContent=true"
+                ],
+                [
+                    "Initial Design of Quora",
+                    "110-initial design of quora",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6337842040537088?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/initial-design-of-quora?showContent=true"
+                ],
+                [
+                    "Final Design of Quora",
+                    "111-final design of quora",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6323245837451264?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/final-design-of-quora?showContent=true"
+                ],
+                [
+                    "Evaluation of Quora\u2019s Design",
+                    "112-evaluation of quoras design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5580185650331648?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/evaluation-of-quoras-design?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Design Google Maps",
+            "topics": [
+                [
+                    "System Design: Google Maps",
+                    "113-system design google maps",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5138720050642944?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/system-design-google-maps?showContent=true"
+                ],
+                [
+                    "Requirements of Google Maps' Design",
+                    "114-requirements of google maps design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5704949308850176?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/requirements-of-google-maps-design?showContent=true"
+                ],
+                [
+                    "Design of Google Maps",
+                    "115-design of google maps",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6659265711833088?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/design-of-google-maps?showContent=true"
+                ],
+                [
+                    "Challenges of Google Maps' Design",
+                    "116-challenges of google maps design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/4659727862071296?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/challenges-of-google-maps-design?showContent=true"
+                ],
+                [
+                    "Detailed Design of Google Maps",
+                    "117-detailed design of google maps",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6026783136940032?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/detailed-design-of-google-maps?showContent=true"
+                ],
+                [
+                    "Evaluation of Google Maps' Design",
+                    "118-evaluation of google maps design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6335210467098624?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/evaluation-of-google-maps-design?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Design a Proximity Service / Yelp",
+            "topics": [
+                [
+                    "System Design: Yelp",
+                    "119-system design yelp",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5264443638546432?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/system-design-yelp?showContent=true"
+                ],
+                [
+                    "Requirements of Yelp\u2019s Design",
+                    "120-requirements of yelps design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/4552284171665408?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/requirements-of-yelps-design?showContent=true"
+                ],
+                [
+                    "Design of Yelp",
+                    "121-design of yelp",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5027439944400896?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/design-of-yelp?showContent=true"
+                ],
+                [
+                    "Design Considerations of Yelp",
+                    "122-design considerations of yelp",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5518783229198336?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/design-considerations-of-yelp?showContent=true"
+                ],
+                [
+                    "Quiz on Yelp's Design",
+                    "123-quiz on yelp s design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6678825089368064?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/quiz-on-yelps-design?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Design Uber",
+            "topics": [
+                [
+                    "System Design: Uber",
+                    "124-system design uber",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6344806557286400?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/system-design-uber?showContent=true"
+                ],
+                [
+                    "Requirements of Uber\u2019s Design",
+                    "125-requirements of ubers design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6376322179268608?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/requirements-of-ubers-design?showContent=true"
+                ],
+                [
+                    "High-level Design of Uber",
+                    "126-high level design of uber",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5429357153091584?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/high-level-design-of-uber?showContent=true"
+                ],
+                [
+                    "Detailed Design of Uber",
+                    "127-detailed design of uber",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6683135341494272?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/detailed-design-of-uber?showContent=true"
+                ],
+                [
+                    "Payment Service and Fraud Detection in Uber Design",
+                    "128-payment service and fraud detection in uber design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6353616188735488?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/payment-service-and-fraud-detection-in-uber-design?showContent=true"
+                ],
+                [
+                    "Evaluation of Uber\u2019s Design",
+                    "129-evaluation of ubers design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5469445371199488?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/evaluation-of-ubers-design?showContent=true"
+                ],
+                [
+                    "Quiz on Uber's Design",
+                    "130-quiz on uber s design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6590232799739904?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/quiz-on-ubers-design?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Design Twitter",
+            "topics": [
+                [
+                    "System Design: Twitter",
+                    "131-system design twitter",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/4687773419700224?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/system-design-twitter?showContent=true"
+                ],
+                [
+                    "Requirements of Twitter\u2019s Design",
+                    "132-requirements of twitters design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5920537112477696?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/requirements-of-twitters-design?showContent=true"
+                ],
+                [
+                    "High-level Design of Twitter",
+                    "133-high level design of twitter",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6194554750894080?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/high-level-design-of-twitter?showContent=true"
+                ],
+                [
+                    "Detailed Design of Twitter",
+                    "134-detailed design of twitter",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6156135136755712?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/detailed-design-of-twitter?showContent=true"
+                ],
+                [
+                    "Client-side Load Balancer for Twitter",
+                    "135-client side load balancer for twitter",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5379128533975040?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/client-side-load-balancer-for-twitter?showContent=true"
+                ],
+                [
+                    "Quiz on Twitter's Design",
+                    "136-quiz on twitter s design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6740284133605376?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/quiz-on-twitters-design?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Design Newsfeed System",
+            "topics": [
+                [
+                    "System Design: Newsfeed System",
+                    "137-system design newsfeed system",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/4943636425080832?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/system-design-newsfeed-system?showContent=true"
+                ],
+                [
+                    "Requirements of a Newsfeed System\u2019s Design",
+                    "138-requirements of a newsfeed systems design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5590893725220864?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/requirements-of-a-newsfeed-systems-design?showContent=true"
+                ],
+                [
+                    "Design of a Newsfeed System",
+                    "139-design of a newsfeed system",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5697004751028224?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/design-of-a-newsfeed-system?showContent=true"
+                ],
+                [
+                    "Evaluation of a Newsfeed System\u2019s Design",
+                    "140-evaluation of a newsfeed systems design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5660564772093952?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/evaluation-of-a-newsfeed-systems-design?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Design Instagram",
+            "topics": [
+                [
+                    "System Design: Instagram",
+                    "141-system design instagram",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5206574926921728?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/system-design-instagram?showContent=true"
+                ],
+                [
+                    "Requirements of Instagram\u2019s Design",
+                    "142-requirements of instagrams design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5571545748996096?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/requirements-of-instagrams-design?showContent=true"
+                ],
+                [
+                    "Design of Instagram",
+                    "143-design of instagram",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5160831733465088?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/design-of-instagram?showContent=true"
+                ],
+                [
+                    "Detailed Design of Instagram",
+                    "144-detailed design of instagram",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6638179708305408?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/detailed-design-of-instagram?showContent=true"
+                ],
+                [
+                    "Quiz on Instagram\u2019s Design",
+                    "145-quiz on instagrams design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5987143142342656?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/quiz-on-instagrams-design?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Design a URL Shortening Service / TinyURL",
+            "topics": [
+                [
+                    "System Design: TinyURL",
+                    "146-system design tinyurl",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6627189651144704?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/system-design-tinyurl?showContent=true"
+                ],
+                [
+                    "Requirements of TinyURL's Design",
+                    "147-requirements of tinyurl s design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5146211836755968?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/requirements-of-tinyurls-design?showContent=true"
+                ],
+                [
+                    "Design and Deployment of TinyURL",
+                    "148-design and deployment of tinyurl",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5753981720068096?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/design-and-deployment-of-tinyurl?showContent=true"
+                ],
+                [
+                    "Encoder for TinyURL",
+                    "149-encoder for tinyurl",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5084162431647744?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/encoder-for-tinyurl?showContent=true"
+                ],
+                [
+                    "Evaluation of TinyURL's Design",
+                    "150-evaluation of tinyurl s design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6451282881019904?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/evaluation-of-tinyurls-design?showContent=true"
+                ],
+                [
+                    "Quiz on TinyURL's Design",
+                    "151-quiz on tinyurl s design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6050864745152512?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/quiz-on-tinyurls-design?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Design a Web Crawler",
+            "topics": [
+                [
+                    "System Design: Web Crawler",
+                    "152-system design web crawler",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/4695113376989184?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/system-design-web-crawler?showContent=true"
+                ],
+                [
+                    "Requirements of a Web Crawler's Design",
+                    "153-requirements of a web crawler s design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6454882160082944?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/requirements-of-a-web-crawlers-design?showContent=true"
+                ],
+                [
+                    "Design of a Web Crawler",
+                    "154-design of a web crawler",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6632099624255488?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/design-of-a-web-crawler?showContent=true"
+                ],
+                [
+                    "Design Improvements of a Web Crawler",
+                    "155-design improvements of a web crawler",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5983505204379648?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/design-improvements-of-a-web-crawler?showContent=true"
+                ],
+                [
+                    "Evaluation of  Web Crawler's Design",
+                    "156-evaluation of web crawler s design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6142975511363584?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/evaluation-of-web-crawlers-design?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Design WhatsApp",
+            "topics": [
+                [
+                    "System Design: WhatsApp",
+                    "157-system design whatsapp",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6538438514049024?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/system-design-whatsapp?showContent=true"
+                ],
+                [
+                    "Requirements of WhatsApp\u2019s Design",
+                    "158-requirements of whatsapps design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5023065490063360?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/requirements-of-whatsapps-design?showContent=true"
+                ],
+                [
+                    "High-level Design of WhatsApp",
+                    "159-high level design of whatsapp",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6728651831246848?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/high-level-design-of-whatsapp?showContent=true"
+                ],
+                [
+                    "Detailed Design of WhatsApp",
+                    "160-detailed design of whatsapp",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6731604231192576?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/detailed-design-of-whatsapp?showContent=true"
+                ],
+                [
+                    "Evaluation of WhatsApp\u2019s Design",
+                    "161-evaluation of whatsapps design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/4861549654573056?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/evaluation-of-whatsapps-design?showContent=true"
+                ],
+                [
+                    "Quiz on WhatsApp\u2019s Design",
+                    "162-quiz on whatsapps design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/4877609447456768?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/quiz-on-whatsapps-design?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Design Typeahead Suggestion",
+            "topics": [
+                [
+                    "System Design: The Typeahead Suggestion System",
+                    "163-system design the typeahead suggestion system",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/4981044919140352?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/system-design-the-typeahead-suggestion-system?showContent=true"
+                ],
+                [
+                    "Requirements of the Typeahead Suggestion System\u2019s Design",
+                    "164-requirements of the typeahead suggestion systems design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6369391511339008?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/requirements-of-the-typeahead-suggestion-systems-design?showContent=true"
+                ],
+                [
+                    "High-level Design of the Typeahead Suggestion System",
+                    "165-high level design of the typeahead suggestion system",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6376843531255808?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/high-level-design-of-the-typeahead-suggestion-system?showContent=true"
+                ],
+                [
+                    "Data Structure for Storing Prefixes",
+                    "166-data structure for storing prefixes",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6110217372172288?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/data-structure-for-storing-prefixes?showContent=true"
+                ],
+                [
+                    "Detailed Design of the Typeahead Suggestion System",
+                    "167-detailed design of the typeahead suggestion system",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5464491722801152?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/detailed-design-of-the-typeahead-suggestion-system?showContent=true"
+                ],
+                [
+                    "Evaluation of the Typeahead Suggestion System\u2019s Design",
+                    "168-evaluation of the typeahead suggestion systems design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6626894497185792?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/evaluation-of-the-typeahead-suggestion-systems-design?showContent=true"
+                ],
+                [
+                    "Quiz on the Typeahead Suggestion System\u2019s Design",
+                    "169-quiz on the typeahead suggestion systems design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5201949791617024?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/quiz-on-the-typeahead-suggestion-systems-design?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Design a Collaborative Document Editing Service / Google Docs",
+            "topics": [
+                [
+                    "System Design: Google Docs",
+                    "170-system design google docs",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5540995072000000?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/system-design-google-docs?showContent=true"
+                ],
+                [
+                    "Requirements of Google Docs\u2019 Design",
+                    "171-requirements of google docs design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5975395656007680?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/requirements-of-google-docs-design?showContent=true"
+                ],
+                [
+                    "Design of Google Docs",
+                    "172-design of google docs",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5921693154934784?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/design-of-google-docs?showContent=true"
+                ],
+                [
+                    "Concurrency in Collaborative Editing",
+                    "173-concurrency in collaborative editing",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6200295243120640?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/concurrency-in-collaborative-editing?showContent=true"
+                ],
+                [
+                    "Evaluation of Google Docs\u2019 Design",
+                    "174-evaluation of google docs design",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5489039691481088?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/evaluation-of-google-docs-design?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Spectacular Failures",
+            "topics": [
+                [
+                    "Introduction to Distributed System Failures",
+                    "175-introduction to distributed system failures",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6503055815606272?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/introduction-to-distributed-system-failures?showContent=true"
+                ],
+                [
+                    "Facebook, WhatsApp, Instagram, Oculus Outage",
+                    "176-facebook whatsapp instagram oculus outage",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5214324309622784?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/facebook-whatsapp-instagram-oculus-outage?showContent=true"
+                ],
+                [
+                    "AWS Kinesis Outage Affecting Many Organizations",
+                    "177-aws kinesis outage affecting many organizations",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5243362298298368?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/aws-kinesis-outage-affecting-many-organizations?showContent=true"
+                ],
+                [
+                    "AWS Wide Spread Outage",
+                    "178-aws wide spread outage",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/6672582694141952?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/aws-wide-spread-outage?showContent=true"
+                ]
+            ]
+        },
+        {
+            "category": "Concluding Remarks",
+            "topics": [
+                [
+                    "Conclusions",
+                    "179-conclusions",
+                    "https://educative.io/api/collection/10370001/4941429335392256/page/5067216508157952?work_type=collection",
+                    "https://www.educative.io/courses/grokking-the-system-design-interview/conclusions?showContent=true"
+                ]
+            ]
+        }
+    ]
+}

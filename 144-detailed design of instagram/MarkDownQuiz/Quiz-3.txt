@@ -1,0 +1,6 @@
+
+## Question 1
+How can we count millions of interactions (like or view) on a celebrity post?
+### Answer
+We can use [sharded counters](https://www.educative.io/courses/grokking-the-system-design-interview/system-design-the-sharded-counters) to count the number of multiple interactions for a particular user. Each counter has a number of shards distributed across various edge servers to reduce the load on the application server and latency. Users nearest to the edge server get the updated count frequently on a specific post compared to those in distant regions.
+---------------------------------------

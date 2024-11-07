@@ -1,0 +1,7 @@
+
+## Question 1
+What happens when a user with just a few followers has a post go viral on Twitter?
+
+### Answer
+The system needs to detect such cases where a counter unexpectedly starts getting very high write traffic. We'll dynamically increase the number of shards of the affected counter to mitigate the situation.
+---------------------------------------

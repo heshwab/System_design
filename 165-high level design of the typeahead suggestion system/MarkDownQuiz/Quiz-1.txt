@@ -1,0 +1,11 @@
+
+## Question 1
+Instead of updating the whole page, we just need to update the suggested query in the search box in real time. What technique can we use for this purpose?
+### Answer
+
+We should update the query asynchronously using **AJAX**. **AJAX** is a set of web development techniques. It allows web pages to exchange a small amount of data, as in the typeahead suggestion system, with the server without interfering with the display and behaviors of the existing web page.
+
+
+
+
+---------------------------------------

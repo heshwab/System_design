@@ -1,0 +1,174 @@
+
+## Question 1
+Which pair of requirements among the following cannot be compromised if we’re asked to design Netflix?
+### Options
+
+1. Low latency and high availability
+Correct
+Streaming services highly require these two design goals to provide a good QoE to end-user.
+----------------------------
+
+2. Low latency and HD video
+Incorrect
+It is extremely important for the service to be available even if the video is not high quality
+----------------------------
+
+3. High availability and HD video
+Incorrect
+This could lead to buffering and lag issues. Therefore, low latency is required.
+----------------------------
+
+4. Consistency and HD video
+Incorrect
+Consistency isn't the most challenging or desired metric when it comes to streaming services.
+----------------------------
+
+---------------------------------------------
+
+## Question 2
+Consider the following design to upload content to the Netflix service:
+
+![](/api/collection/10370001/4941429335392256/page/6669179066777600/image/6421862148341760?page_type=collection_lesson&get_optimised=true)
+
+Note that there are two unnamed components. Select the correct option to complete the design.
+### Options
+
+1. <img src="/api/collection/10370001/4941429335392256/page/6669179066777600/image/4654959679635456?page_type=collection_lesson&get_optimised=true
+"  height="150">
+Incorrect
+Metadata storage cannot be the first point of contact for the end-users.
+----------------------------
+
+2. <img src="/api/collection/10370001/4941429335392256/page/6669179066777600/image/6430911476662272?page_type=collection_lesson&get_optimised=true
+"  height="150">
+Incorrect
+It doesn't make sense for the uploading servers and Mapreduce to store data in colocation sites instead of a datastore.
+----------------------------
+
+3. <img src="/api/collection/10370001/4941429335392256/page/6669179066777600/image/5282981189386240?page_type=collection_lesson&get_optimised=true
+"  height="150">
+Correct
+Users' requests are distributed among uploading servers using load balancers. Also, we can use a datastore to save (meta)data from uploading servers and Mapreduce.
+----------------------------
+
+4. <img src="/api/collection/10370001/4941429335392256/page/6669179066777600/image/6142871709548544?page_type=collection_lesson&get_optimised=true"  height="150">
+Incorrect
+Web servers require load balancers before them in practical designs. Moreover, uploading servers would extract metadata from raw videos and store it in a database that isn't a key-value store.
+----------------------------
+
+---------------------------------------------
+
+## Question 3
+Which encoding technique is the most effective in terms of streaming to end users?
+### Options
+
+1. Use a single encoding technique for all types of content to achieve simplicity in design.
+Incorrect
+Depending on the type of content within a video, it is better to use different encoding schemes to get optimal results.
+----------------------------
+
+2. Encode the entire video based on the content inside it—for example, encode an action movie with dynamic colors differently than a 2D cartoon.
+Incorrect
+Encoding entire video helps but it is not the most optimal solution. 
+----------------------------
+
+3. Use different encoding techniques for different shots or segments within a video. For example, highly dynamic scenes should be encoded differently than lesser dynamic scenes within a single video.
+Correct
+Using a per-shot encoding technique can save storage space, transmission bandwidth, as well as make streaming convenient in terms of user bandwidth.
+----------------------------
+
+4. Encoding doesn't matter at all.
+Incorrect
+This isn't true. Encoding helps in the overall optimization.
+----------------------------
+
+---------------------------------------------
+
+## Question 4
+**Adaptive bitrate streaming** is a common technique used to provide a good streaming experience to the user. It works by detecting a user’s bandwidth and the CPU capacity of the user’s device in real time, and adjusts the quality of the media stream accordingly.
+
+Considering the above explanation, which diagram explains adaptive bitrate the best?
+
+### Options
+
+1. <img src="/api/collection/10370001/4941429335392256/page/6669179066777600/image/4905392780214272?page_type=collection_lesson&get_optimised=true"
+height="350">
+Incorrect
+Webservers don't generate multiple video qualities. It is the job of encoders.
+----------------------------
+
+2. <img src="/api/collection/10370001/4941429335392256/page/6669179066777600/image/4923872480985088?page_type=collection_lesson&get_optimised=true"  height="350">
+Incorrect
+CDNs don't generate multiple video qualities. It is the job of encoders.
+----------------------------
+
+3. <img src="
+/api/collection/10370001/4941429335392256/page/6669179066777600/image/6341129782296576?page_type=collection_lesson&get_optimised=true"  height="350">
+Incorrect
+Application servers run the business or logic of the application instead of serving videos to the clients.
+----------------------------
+
+4. <img src="
+/api/collection/10370001/4941429335392256/page/6669179066777600/image/5051786170073088?page_type=collection_lesson&get_optimised=true
+"  height="350">
+Correct
+The encoder converts videos into multiple formats and the streaming server sends it to the client.
+----------------------------
+
+---------------------------------------------
+
+## Question 5
+What is the most appropriate sequence from development to end user delivery to stream content?
+### Options
+
+1. Encoding, bitrate conversion, subtitles addition, and deployment
+Correct
+
+----------------------------
+
+2. Deployment, bitrate conversion, subtitles, and encoding
+Incorrect
+It is non-sensical to first deploy a video and then encode it.
+----------------------------
+
+3. Encoding, bitrate conversion, uploading to CDN, and deployment
+Incorrect
+Uploading to CDN is the same thing as deployment. Also, subtitles addition is missed out.
+----------------------------
+
+4. Uploading to CDN, encoders, and bitrate conversion
+Incorrect
+First, videos must be encoded and then deployed to CDNs.
+----------------------------
+
+---------------------------------------------
+
+## Question 6
+Assume that 100,000 users try to watch a football stream at 1080p in a densely populated city. If the CDN point of presence (PoP) in that area can provide a bandwidth of 300 Gbps for end users, which design best serves the clients without any buffering issues?
+### Options
+
+1. <img src="/api/collection/10370001/4941429335392256/page/6669179066777600/image/5592016216260608?page_type=collection_lesson&get_optimised=true
+"  height="190">
+Incorrect
+Not the best choice because it will require an extraordinary bandwidth for the CDN to serve out 100,000 users each with 1080p quality of streaming service.
+----------------------------
+
+2. <img src="/api/collection/10370001/4941429335392256/page/6669179066777600/image/5317169078730752?page_type=collection_lesson&get_optimised=true
+"  height="190">
+Incorrect
+This strategy will put huge burden on the backbone Internet. Bottlenecks will create issues.
+----------------------------
+
+3. <img src="/api/collection/10370001/4941429335392256/page/6669179066777600/image/4957626612187136?page_type=collection_lesson&get_optimised=true
+"  height="190">
+Correct
+Cache servers maintained at the ISP will provide coverage to all the users reducing bandwidth requirements for the CDN as well as the origin servers.
+----------------------------
+
+4. <img src="/api/collection/10370001/4941429335392256/page/6669179066777600/image/5513268930412544?page_type=collection_lesson&get_optimised=true
+"  height="250">
+Incorrect
+Streaming servers are an alternative to colocation sites. These will not be enough for 100,000 users within the same geographical location.
+----------------------------
+
+---------------------------------------------

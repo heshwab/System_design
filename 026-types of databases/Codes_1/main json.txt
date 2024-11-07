@@ -1,0 +1,18 @@
+
+
+{  "id": 1001,
+   "name": "Brown",
+   "title": "Mr.",
+   "email": "brown@anyEmail.com",
+   "cell": "123-465-9999",
+   "likes": [
+      "designing",
+      "cycling",
+      "skiing"],
+   "businesses": [
+      { "name": "ABC co.",
+         "partner": "Vike",
+         "status": "Bankrupt",
+         "date_founded": {
+            "$date": "2021-12-10" } }]}
+

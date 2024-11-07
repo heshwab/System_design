@@ -1,0 +1,18 @@
+
+## Question 1
+What is the difference between reliability and availability?
+### Answer
+**Reliability** measures how well a system performs its intended operations (functional requirements). We use averages for that (Mean Time to Failure, Mean Time to Repair, etc.)
+
+**Availability** measures the percentage of time a system accepts requests and responds to clients.
+
+
+
+**Example 1:** A certain system may be 90% available but only reliable 80% of the time.
+
+**Example 2:** Suppose we consider our “system” the stuff inside a data center (hardware + software). Let’s assume this data center suffers a network failure such that no outsider traffic is coming in and no insider traffic is going out. In this case, instantaneous availability might be zero (because clients cannot reach the service) even though inside the data center, all systems are perfectly functioning (instantaneous reliability 100%).
+
+We use both of them (reliability and availability) in different contexts. For example, storage vendors often quote MTTF for their disks. Most online services use uptime (as a measure of availability) in their SLAs. For example, the uptime of EC2 virtual machines is 99.95%.
+
+
+---------------------------------------

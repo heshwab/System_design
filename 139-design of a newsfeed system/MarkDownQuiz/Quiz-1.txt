@@ -1,0 +1,6 @@
+
+## Question 1
+The creation and storage of newsfeeds for each user in the cache requires an enormous amount of memory (step 5 in the above section). Is there any way to reduce this memory consumption?
+### Answer
+A memory-efficient way would be to store just the mapping between users and their corresponding posts in a table in the cache, that is., `< Post_ID, User_ID>`. During the feed publishing phase, the system will retrieve posts from the post database and generate the newsfeed for a user who follows another user with `User_ID`.  
+---------------------------------------

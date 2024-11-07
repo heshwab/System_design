@@ -1,0 +1,10 @@
+
+## Question 1
+How can using different data stores for different types of data be beneficial in disaster recovery?
+
+### Answer
+When we use different data stores, it means that we can recover various forms of data simultaneously instead of one large blob of data. Since we recover data stores with variable recovery times, the final recovery time equals the maximum recovery time among all data stores.
+
+However, using many databases also means that administrators need to know the details of checkpointing or restoring them.
+
+---------------------------------------

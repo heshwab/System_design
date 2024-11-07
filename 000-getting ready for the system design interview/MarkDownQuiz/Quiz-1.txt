@@ -1,0 +1,6 @@
+
+## Question 1
+Another question in a System Design interview might be related to why we don’t design a system that’s already capable of handling more work than necessary or predicted.
+### Answer
+The cost associated with complex projects is a major reason why we don’t do that.
+---------------------------------------

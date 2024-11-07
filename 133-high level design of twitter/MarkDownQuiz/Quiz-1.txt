@@ -1,0 +1,16 @@
+
+## Question 1
+At most, how many hashtags can a Tweet have?
+
+### Answer
+The text limit is 280 characters in 
+a Tweet. So, users can use the hashtag(s) such that text length (including plain text, any links, and hashtags) does not exceed the limit of 280 characters.
+
+---------------------------------------
+
+## Question 2
+What is the need for the `list_of_tagged_people` in the `/postTweet` API?
+
+### Answer
+The system has to notify the people tagged in the Tweet.
+---------------------------------------

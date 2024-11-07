@@ -1,0 +1,9 @@
+
+## Question 1
+What are the disadvantages of the above-proposed solution?
+### Answer
+Since the inverted index will be transferred to the replicas, this will introduce a transmission latency to copy the inverted index file because the size of the index file can be very large.
+
+When the primary node receives new indexing operations, the inverted index file changes. Each replica needs to fetch the latest version of the file after a certain amount of indexing operations reaches a defined threshold.
+ <!-- Let's have a look at a way to reduce indexing latency on replicas to sub-minute latency. -->
+---------------------------------------

@@ -1,0 +1,63 @@
+
+## Question 1
+A system wants to write data and promptly read it back. At the same time, we want consistency between the cache and database. Which writing policy is the optimal choice?
+### Options
+
+1. Write-through cache
+Correct
+Reading will be prompt and data will be consistent in the database as well. 
+----------------------------
+
+2. Write-around cache
+Incorrect
+This choice will reduce performance because reading every recently written data entry will result in a cache miss.
+----------------------------
+
+3. Write-back cache
+Incorrect
+Inconsistency may arise because data is written asynchronously to the source of truth (database). 
+----------------------------
+
+---------------------------------------------
+
+## Question 2
+With reference to performance, what should a write-heavy system avoid?
+### Options
+
+1. Write-back cache
+Incorrect
+This has the best performance because data is only written to the cache and after that written asynchronously to the database.
+----------------------------
+
+2. Write-through cache
+Correct
+Write-through cache has high write latency because it writes to the database as well as cache. 
+----------------------------
+
+3. Write-around cache
+Incorrect
+This is also bad because data is written to the database. However, write-around cache latency will be lower than that of write-through cache because the write-through writes to the database and the cache.
+----------------------------
+
+---------------------------------------------
+
+## Question 3
+Outdated or stale data entry is a typical issue in which writing policy?
+### Options
+
+1. Write-through
+Incorrect
+
+----------------------------
+
+2. Write-back
+Correct
+Because data is written asynchronously to the database.
+----------------------------
+
+3. Write-around
+Correct
+Because it bypasses the cache for write operations, leading to the possibility of data being quickly evicted from the cache before it's read again.
+----------------------------
+
+---------------------------------------------

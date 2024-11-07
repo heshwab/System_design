@@ -1,0 +1,9 @@
+
+## Question 1
+What happens if a network is congested? Should DNS continue using UDP?
+### Answer
+Typically, DNS uses UDP. However, DNS can use TCP when its message size exceeds the original packet size of 512 Bytes. This is because large-size packets are more prone to be damaged in congested networks. DNS always uses TCP for zone transfers.
+
+Some clients prefer TCP over UDP to employ transport layer security for privacy reasons.
+
+---------------------------------------

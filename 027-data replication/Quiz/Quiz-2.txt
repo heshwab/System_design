@@ -1,0 +1,22 @@
+
+## Question 1
+Which replication mechanism is the most appropriate (high throughput, low latency to client, low implementation overhead) when our workload is read-heavy?
+
+### Options
+
+1. Primary-secondary/single leader replication
+Correct
+
+----------------------------
+
+2. Multi-leader replication
+Incorrect
+
+----------------------------
+
+3. Peer-to-peer replication
+Incorrect
+
+----------------------------
+
+---------------------------------------------

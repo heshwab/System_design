@@ -1,0 +1,10 @@
+
+## Question 1
+Can you identify a hidden assumption in our calculations above?
+### Answer
+When we divided the daily user requests by the number of seconds in a day, we assumed that those requests were uniformly distributed over those seconds.
+
+This raises the question if the above assumption is reasonable? Rarely will a service get such a nice, uniform distribution of requests.
+
+Doing the above is a simple strategy; what we get can be considered a lower bound on the respective resource.
+---------------------------------------

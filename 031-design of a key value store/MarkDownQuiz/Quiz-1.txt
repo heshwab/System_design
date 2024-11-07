@@ -1,0 +1,12 @@
+
+## Question 1
+Why do we need to run key-value stores on multiple servers?
+### Answer
+A single-node-based hash table can fall short due to one or more of the following reasons:
+
+* No matter how big a server we get, this server can’t meet data storage and query requirements.
+
+* Failure of this one mega-server will result in service downtime for everyone.
+
+So, key-value stores should use many servers to store and retrieve data.
+---------------------------------------

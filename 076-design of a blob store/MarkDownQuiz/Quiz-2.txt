@@ -1,0 +1,6 @@
+
+## Question 1
+Suppose the manager node moves data from one data node to another because of an impending disk failure. The user will now have stale information if they use the cached metadata to access the data. How do we handle such situations?
+### Answer
+In such cases, the client calls fail. The client then flushes the cache and fetches new metadata information from the manager node.
+---------------------------------------

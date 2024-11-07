@@ -1,0 +1,21 @@
+
+## Question 1
+Since we're using the 10 digits and beyond sequencer IDs, is there a way we can use the sequencer IDs shorter than 10 digits?
+### Answer
+We can use the range below the ten digits sequencer IDs for custom short links for users with premium memberships. It will ensure two benefits:
+* Utilization of the blocked range of IDs
+* Less than six characters short URLs
+
+**Example**: Let's assume that the user requests `abc` as a custom short URL, and it's available in our system, as there is no instance in the data store matching with this short URL. We need to perform the following two operations:
+1. Assign this short URL to the requested long URL and store this record in the datastore. 
+2. Mark the associated unique ID unusable. To find the associated unique ID, we need to decode `abc` into base-10. Using the above decode method, we come up with the base-10 unique ID value as `113019`. The unique ID is less than 1 Billion, as the custom short URL is less than six characters, conforming to the above-stated two benefits.
+
+ 
+>Our system doesn't ensure a guaranteed custom short link generation, as some other premium member might have claimed the requested custom short URL.
+---------------------------------------
+
+## Question 2
+What should the short URL be for the sequencer's largest number?
+### Answer
+Since the sequencer's largest number is 18,446,744,073,709,551,615. That is, $2^{64}-1$, the base-58 equivalent of it will be jpXCZedGfVQ, conforming to our calculations above.
+---------------------------------------

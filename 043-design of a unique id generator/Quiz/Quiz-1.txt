@@ -1,0 +1,27 @@
+
+## Question 1
+**(Select all that apply.)** What are the pros of using the UUID approach?
+
+### Options
+
+1. It doesn’t require synchronization between servers.
+Correct
+
+----------------------------
+
+2. It’s a simple approach.
+Correct
+
+----------------------------
+
+3. It’s scalable.
+Correct
+The system is scalable as each server is responsible for generating IDs independently.
+----------------------------
+
+4. It’s available.
+Correct
+
+----------------------------
+
+---------------------------------------------

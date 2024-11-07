@@ -1,0 +1,10 @@
+
+## Question 1
+Can you find another shortcoming in the design shown above?
+### Answer
+The #key# physical clocks: A device used to measure and indicate time, e.g., pendulums, hourglass, quartz clock, etc. #key# are unreliable. For such clocks, the error can be 17 seconds per day. If we measure time using these on a server, the time drifts away. 
+
+Considering a single server, we won't be affected by the drifting away of time since all transactions land on a single server. But in a distributed environment, the clocks won't remain synced. 
+
+Due to the unreliability of measuring accurate time, no matter how often we synchronize these clocks with each other or other clocks with accurate measurement methods, there will always be _skew_ between the various clocks involved in a distributed system.
+---------------------------------------

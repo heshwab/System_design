@@ -1,0 +1,132 @@
+
+## Question 1
+Which component is responsible for updating the trie offline in the design of the typeahead suggestion system?
+### Options
+
+1. The assembler
+Correct
+
+----------------------------
+
+2. The suggestion service
+Incorrect
+
+----------------------------
+
+3. ZooKeeper
+Incorrect
+
+----------------------------
+
+4. None of the above 
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 2
+What is the purpose of MapRreduce in the design of the typeahead suggestion system?
+
+### Options
+
+1. To disseminate data toward a database for storage
+
+Incorrect
+
+----------------------------
+
+2. To aggregate the prefix count
+Correct
+
+----------------------------
+
+3. To increase the number of required operations for optimization
+Incorrect
+
+----------------------------
+
+4. None of the above
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 3
+Why do we aggregate the counts and update them offline in their respective shards?
+
+### Options
+
+1. To enhance the write operations 
+Incorrect
+
+----------------------------
+
+2. To provide accurate results to the user
+Incorrect
+
+----------------------------
+
+3. To minimize the latency of the read operations 
+Correct
+
+----------------------------
+
+4. None of the above
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 4
+**(Select all that apply.)** Why is the trie partitioned and stored on several servers?
+
+### Options
+
+1. To reduce the load on a single server 
+Correct
+
+----------------------------
+
+2. To store more data
+Incorrect
+
+----------------------------
+
+3. To increase the performance of the system
+Correct
+
+----------------------------
+
+4. None of the above
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 5
+**(Select all that apply.)** The replication of the trie partition is required to enhance ________.
+
+### Options
+
+1. fault tolerance
+
+Correct
+
+----------------------------
+
+2. the durability of the data 
+Correct
+
+----------------------------
+
+3. the security of the data
+
+Incorrect
+
+----------------------------
+
+---------------------------------------------

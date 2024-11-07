@@ -1,0 +1,103 @@
+
+## Question 1
+Which of the following algorithms is used to smooth spikes in incoming requests at the edge of the window? 
+
+### Options
+
+1. Token bucket algorithm
+Incorrect
+
+----------------------------
+
+2. Sliding window log algorithm
+Correct
+Due to the sliding window over time this algorithm does not allow the spikes of requests at the window edge. 
+----------------------------
+
+3. Fixed window counter algorithm
+Incorrect
+
+----------------------------
+
+4. None of the above
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 2
+Assume that soft-throttling is used with a rate of 100 requests per minute and a 5% exceed in the limit is allowed. The client has sent the 104th request within the time limit. However, no resources are available to serve the request. What should the system do with this incoming request?
+### Options
+
+1. Discard the request and send an error response to the client. 
+Incorrect
+
+----------------------------
+
+2. Add a request to the queue and wait for the resource to become available.
+
+Correct
+Since with 5% exceed in the limit, the rate limiter can allow 105 requests per minute. Therefore, the request will be allowed and the system will keep the request in the queue until the required resource becomes available.
+----------------------------
+
+---------------------------------------------
+
+## Question 3
+Assume that the service owner adds some extra rules to the database. Consequently, data in the cache will become outdated. In this scenario, which components are responsible for updating the cache?
+### Options
+
+1. The request processor
+Incorrect
+
+----------------------------
+
+2. Decision-maker
+Incorrect
+
+----------------------------
+
+3. Throttle rule retriever
+Correct
+Throttle rule retriever checks for changes in rules updated or modified by the service owner. Hence, this component is responsible for updating the cache. 
+----------------------------
+
+4. None of the above
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 4
+A client has to send 18 MB of data at a rate of 6 Mbps (megabits per second) to a server. Let’s assume that the server processes data at a rate of 4 Mbps. If the leaky bucket algorithm is used at the server end, how much capacity must the queue hold so as not to discard any data?
+### Options
+
+1. 6 MB
+Correct
+Size of data to be sent $=$ $18MB \times 8= 144Mb$
+
+Time taken to transmit $144Mb$$= 144Mb/6Mbps=24s$
+
+Actual data that the server can process in $24s$$=4Mbps*24s=96Mb=12MB$
+
+Bucket (queue) size$=18MB-12MB=6MB$
+
+----------------------------
+
+2. 9 MB
+Incorrect
+
+----------------------------
+
+3. 3 MB
+Incorrect
+
+----------------------------
+
+4. 7 MB
+Incorrect
+
+----------------------------
+
+---------------------------------------------

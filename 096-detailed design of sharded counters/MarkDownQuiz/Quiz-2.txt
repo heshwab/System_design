@@ -1,0 +1,6 @@
+
+## Question 1
+Can you think of a use case where sharded counters with the above-mentioned consistency model might not be suitable?
+### Answer
+We might not use shared counters with a relaxed consistency model where we need strong consistency. An example can be read-then-write scenarios where we first need to get the accurate value of something before deciding to modify it (actually, such a scenario will need transaction support).
+---------------------------------------

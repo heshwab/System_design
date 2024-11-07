@@ -1,0 +1,11 @@
+
+## Question 1
+How can we further scale when our manager server hits its limits and we can’t improve its computational abilities by vertical scaling?
+### Answer
+We can make two independent instances of our system. Each instance will have its own manager node and a set of data nodes. Deployment of a system similar to ours has been shown to scale up to a few petabytes. Therefore, making additional instances can help us scale further.
+
+For further scaling inside a single instance, we need a new, more #key# complicated design: "Windows Azure Storage: A Highly Available Cloud Storage Service with Strong Consistency". #key#.
+ 
+
+
+---------------------------------------

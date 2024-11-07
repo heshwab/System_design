@@ -1,0 +1,20 @@
+
+## Question 1
+Apart from permitting bursts, can the token bucket algorithm surpass the limit at the edges? 
+### Answer
+Yes, the token bucket algorithm can sometimes suffer from overrunning the limit at the edges, as demonstrated by the following example:
+
+Consider a scenario with a bucket capacity equal to $3$, and the number of requests allowed per minute is also $3$. This yields a refill rate of $0.33$ minutes, which means that a new token will come every $0.33$ minute.
+
+In the illustration below, three tokens have been accumulated at the end of the first minute. At the same time, a burst of requests arrives and consumes all three tokens, leaving the bucket empty. At the end of $1.33$ minutes (at a refill rate of $0.33$), a new token is added to the bucket. Simultaneously, a new request arrives and consumes the token. 
+
+However, if we consider the duration from $0.66$ to $1.33$ minutes, we'll see that a total of four tokens have been consumed.
+
+This example shows that the token bucket can surpass the limit at the edges. 
+
+<center>
+
+![](/api/collection/10370001/4941429335392256/page/5447913559293952/image/6083916468060160?page_type=collection_lesson)
+
+</center>
+---------------------------------------

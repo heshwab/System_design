@@ -1,0 +1,6 @@
+
+## Question 1
+As a design choice, we don't reuse the expired short URLs. Since we don't reuse them, why do we need to delete them from our system?
+### Answer
+So far, we've kept the default expiration time to five years. If we relax that limitation and start saving the records forever, our datastore's search index will grow without bound, and querying time from it can add noticeable latency.
+---------------------------------------

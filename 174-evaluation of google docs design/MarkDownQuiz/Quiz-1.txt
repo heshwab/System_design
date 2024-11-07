@@ -1,0 +1,16 @@
+
+## Question 1
+Why should we use strong consistency instead of eventual consistency for conflict resolution in a collaborative document editing service?
+### Answer
+From Amazon’s Dynamo system, we learn that if we use eventual consistency for conflict resolution, we might have multiple versions of a document that are eventually reconciled, either automatically or manually. In the case of automatic reconciliation, the document might update abruptly, which defeats the purpose of collaboration. The second case, manual resolution, is tedious labor that we want to avoid.
+
+Therefore, we use strong consistency for conflict resolution, and the logically centralized server provides the final order of events to all clients. We use a replicated operations queue so that even if our ordering service dies, it can easily restart on a new server and resume where it left off. Clients might encounter short service unavailability while the failed component is being respawned.
+
+
+
+
+<!--
+Because different users can be collaborating on the same document, one user's change may fork a new copy than the other user's version of the same document. Such changes can have a cascading effect, eventually leading to undesired behavior.
+
+-->
+---------------------------------------

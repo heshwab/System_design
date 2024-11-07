@@ -1,0 +1,6 @@
+
+## Question 1
+What can be a potential problem of using a central database?
+### Answer
+This design has a considerable problem: a single point of failure. Reliance on one database can severely affect a system. The entire system will stop working if the central database goes down.
+---------------------------------------

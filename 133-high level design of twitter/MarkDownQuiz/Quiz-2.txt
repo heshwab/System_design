@@ -1,0 +1,7 @@
+
+## Question 1
+Which parameter in the `viewHome_timeline` method is the most relevant when deciding which promoted ads (Tweets) to be returned in response?
+
+### Answer
+The decision to send specified promoted ads is made on the `user_location` parameter. For example, the user belongs to the `NewYork` city, so most probably it gets promoted ads associated or originated in that region.
+---------------------------------------

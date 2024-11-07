@@ -1,0 +1,6 @@
+
+## Question 1
+What does the manager node do if a user concurrently writes two blobs with the same name inside the same container? 
+### Answer
+The manager node serializes such operations and assigns a version number to the blob that’s uploaded later.
+---------------------------------------

@@ -1,0 +1,13 @@
+
+## Question 1
+How do we handle messages that can’t be processed—here meaning consumed—after maximum processing attempts by the consumer?
+### Answer
+A special type of queue, called a **dead-letter queue**, can be provided to handle messages that aren’t consumed after the maximum number of processing attempts have been made by the consumer. This type of queue is also used for keeping messages that can’t be processed successfully due to the following factors:
+
+* The messages intended for a queue that doesn’t exist anymore.
+* The queue length limit is exceeded, although this would rarely occur with our current design.
+* The message expires due to per-message time to live (TTL).
+
+A dead-letter queue is also important for determining the cause of failure and for identifying faults in the system.
+
+---------------------------------------

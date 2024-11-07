@@ -1,0 +1,140 @@
+
+## Question 1
+What kind of messages do dead-letter queues contain?
+### Options
+
+1. The messages that have been consumed successfully. 
+
+Incorrect
+
+----------------------------
+
+2. The messages that failed to be consumed and have reached the maximum attempts limit.
+ 
+Correct
+A dead letter cannot be delivered or returned because it lacks appropriate directions. Similarly, a queue named after the `dead-letter` contains those messages that have failed to be consumed after the maximum attempts limit. 
+----------------------------
+
+3. The messages that have been produced by a process that’s dead now.
+
+Incorrect
+
+----------------------------
+
+4. None of the above 
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 2
+The purpose of replicating queues on multiple servers is to enhance the _________ of the system.
+
+### Options
+
+1. security
+Incorrect
+
+----------------------------
+
+2. consistency
+Incorrect
+
+----------------------------
+
+3. availability
+Correct
+The purpose of replicating the queues and corresponding messages on multiple nodes is to increase the system's availability. When one node is down, another stand-by server can serve the request. 
+----------------------------
+
+4. None of the above
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 3
+In the **cluster of independent hosts** model, which component is responsible for replicating messages in the other nodes?  
+### Options
+
+1. The front-end server
+
+Incorrect
+
+----------------------------
+
+2. The cluster manager
+
+Incorrect
+
+----------------------------
+
+3. Any random host within the cluster
+
+Correct
+In the **cluster of independent hosts** model, a random host can receive the message responsible for replicating messages in other hosts in the respective queues.  
+----------------------------
+
+4. None of the above
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 4
+The purpose of a metadata service is _________.
+### Options
+
+1. to store messages in the queues along with their metadata
+Incorrect
+
+----------------------------
+
+2. to store, retrieve, and update the metadata of queues in the metadata store and cache
+
+Correct
+Metadata service acts as a middleware between the front-end and metadata storages (and caches). It is responsible for storing, retrieving, and updating the metadata of queues in the metadata stores and caches.
+----------------------------
+
+3. to provide security features in accessing the queues
+
+Incorrect
+
+----------------------------
+
+4. None of the above
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 5
+Which of the following is responsible for partitioning the queue and assigning a primary node to each partition?
+### Options
+
+1. The internal cluster manager
+
+Correct
+The internal cluster manager partitions a queue into multiple parts and assigns a primary node to each partition. In contrast, the external cluster manager assigns clusters to each queue partition. 
+----------------------------
+
+2. The external cluster manager
+Incorrect
+
+----------------------------
+
+3. The primary node
+Incorrect
+
+----------------------------
+
+4. One of the secondary nodes
+Incorrect
+
+----------------------------
+
+---------------------------------------------

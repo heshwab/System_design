@@ -1,0 +1,16 @@
+
+## Question 1
+What possible measures should Amazon have adopted to safeguard against the kind of failures they faced in Kinesis Data Streams?
+### Answer
+### Possible solutions
+* Dividing the region into independent failure domains would have reduced the blast radius of the event and made it possible for the production team to quickly recover from the problem. 
+
+* They should have a system like Facebook's Resource Allowance System for capacity reservation at the time of planned and unplanned events.
+ 
+* Building an application across multiple clouds or AWS regions would have made it easier for the affected customers to recover quickly. 
+
+* There's a need to uncouple services to an extreme extent to eliminate cross-dependency issues. 
+
+* Failures in a complex system are inevitable. However, some important services like the status dashboard should be hosted on different servers, either inside the service or in some third-party’s infrastructure.
+
+---------------------------------------

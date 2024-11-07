@@ -1,0 +1,6 @@
+
+## Question 1
+What if a long task is 90% executed, but before it completes, the machine that was executing this task fails?
+### Answer
+The task scheduler will re-execute the task on some other machine. Tasks need to be either idempotent, which is discussed later in the lesson, or they should be able to restore their state from a previous checkpoint. Once the state is saved, we can resume that task’s execution on any other machine. This makes our system fault tolerant and saves our resources.
+---------------------------------------

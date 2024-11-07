@@ -1,0 +1,8 @@
+
+## Question 1
+What happens when the same task fails multiple times?
+
+### Answer
+We can use a dead-letter queue facility to isolate repeatedly failing tasks.
+
+---------------------------------------

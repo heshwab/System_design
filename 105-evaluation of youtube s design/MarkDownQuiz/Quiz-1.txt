@@ -1,0 +1,6 @@
+
+## Question 1
+Isn't the load balancer a single point of failure (SPOF)?
+### Answer
+Just like with servers, we can use multiple load balancers. Users can be randomly forwarded to different load balancers from the Domain Name System (DNS).
+---------------------------------------

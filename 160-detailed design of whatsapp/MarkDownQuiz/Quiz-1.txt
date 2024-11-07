@@ -1,0 +1,7 @@
+
+## Question 1
+Why is WebSocket preferred over HTTP(S) protocol for client-server communication?
+### Answer
+HTTP(S) doesn’t keep the connection open for the servers to send frequent data to a client. With HTTP(S) protocol, a client constantly requests updates from the server, commonly called **polling**, which is resource intensive and causes latency. WebSocket maintains a persistent connection between the client and a server. This protocol transfers data to the client immediately whenever it becomes available. It provides a bidirectional connection used as a common solution to send asynchronous updates from a server to a client.
+
+---------------------------------------

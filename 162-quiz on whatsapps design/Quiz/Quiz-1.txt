@@ -1,0 +1,135 @@
+
+## Question 1
+The WebSocket manager is responsible for which function?
+
+### Options
+
+1. Routing data toward a user
+
+Incorrect
+
+----------------------------
+
+2. Maintaining the mapping between users and their WebSocket handlers
+Correct
+
+----------------------------
+
+3. Reconnecting users to blob storage
+Incorrect
+
+----------------------------
+
+4. None of the above
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 2
+What happens to the message if it’s sent to an offline user?
+### Options
+
+1. The message is discarded, and an error response is sent back to the sender.
+Incorrect
+
+----------------------------
+
+2. The message is forwarded to another user.
+Incorrect
+
+----------------------------
+
+3. The message is stored in a database for a temporary period unless the user becomes online.
+Correct
+
+----------------------------
+
+4. None of the above
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 3
+Why can’t WhatsApp use the Mnesia database to store media files instead of using blob storage?
+### Options
+
+1. Mnesia provides limited capacity.
+Incorrect
+
+----------------------------
+
+2. Blob store is optimized to store and retrieve large files.
+Correct
+
+----------------------------
+
+3. Mnesia is more costly than blob storage.
+Incorrect
+
+----------------------------
+
+4. None of the above
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 4
+**(Fill in the blank.)** If a media file is shared and accessed multiple times, it’s stored in ________ from blob storage.
+
+### Options
+
+1. Kafka
+Incorrect
+
+----------------------------
+
+2. the Mnesia database
+Incorrect
+
+----------------------------
+
+3. a CDN
+Correct
+
+----------------------------
+
+4. a MySQL database
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 5
+**(Fill in the blank.)** WebSocket servers use cache to ________.
+### Options
+
+1. store messages temporarily
+
+Incorrect
+
+----------------------------
+
+2. store messages permanently
+
+Incorrect
+
+----------------------------
+
+3. store mapping of users and their corresponding WebSocket handlers
+Correct
+
+----------------------------
+
+4. store metadata of each user
+Incorrect
+
+----------------------------
+
+---------------------------------------------

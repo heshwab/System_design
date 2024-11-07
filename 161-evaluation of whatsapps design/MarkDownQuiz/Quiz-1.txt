@@ -1,0 +1,7 @@
+
+## Question 1
+In the event of a network partition, what should the system choose to compromise between consistency and availability? 
+### Answer
+According to the CAP theorem, the system would provide either consistency or availability in the event of a network partition. In our system of a WhatsApp messenger, the correct ordering of messages is essential. Otherwise, the context of the information communicated between users might change significantly. Therefore, availability in our system can take a hit if the network partition occurs.
+
+---------------------------------------

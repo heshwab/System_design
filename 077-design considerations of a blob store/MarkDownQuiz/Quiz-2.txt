@@ -1,0 +1,7 @@
+
+## Question 1
+How do we decide which five blobs to return first out of the 2,000 blobs total?
+
+### Answer
+Here, we utilize indexing to **sort** and **categorize** the blobs. We should do this beforehand, while we store the blobs. Otherwise, it becomes challenging at the time of returning the list to the user. There could be millions or billions of blobs and we can’t sort them quickly when the list request is received.
+---------------------------------------

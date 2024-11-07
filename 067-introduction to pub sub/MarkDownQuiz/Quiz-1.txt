@@ -1,0 +1,12 @@
+
+## Question 1
+What are the similarities and differences between a pub-sub system and queues?
+### Answer
+The pub-sub system and queues are similar because they deliver information that’s produced by the producer to the consumer. The difference is that only one consumer consumes a message in the queue, while there can be multiple consumers of the same message in a pub-sub system.
+---------------------------------------
+
+## Question 2
+How are producers and consumers decoupled from one another in a pub-sub system?
+### Answer
+Producers don’t know who’ll end up reading their information. They just send it to the system, and it is read by the consumer. The system acts as a decoupling layer between the producers and consumers. Producers are not affected by slow consumers, the count of consumers, or the failure of consumers. We can scale them independently.
+---------------------------------------

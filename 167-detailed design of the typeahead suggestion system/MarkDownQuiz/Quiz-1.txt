@@ -1,0 +1,8 @@
+
+## Question 1
+Should we collect data and build a trie per user, or should it be shared among all users?
+### Answer
+Since we aim to design a system on a scale that’s similar to Google Search, billions of users will be using our service. Since the number of users would be huge, maintaining a tree for each user would become complex and time-consuming. There’s also a possibility of duplicated trees if several users have typed some common searches, resulting in resource wastage.
+
+Therefore, our design assumes a **common trie** that’s shared among users, where the ranking would be based on single phrases in the trie and the frequency of the terms. 
+---------------------------------------

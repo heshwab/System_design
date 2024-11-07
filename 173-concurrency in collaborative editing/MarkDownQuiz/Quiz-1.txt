@@ -1,0 +1,14 @@
+
+## Question 1
+Why can’t we use locks to synchronize between users?
+### Answer
+Locks require us to segment documents into small sections where users could lock a portion and edit it. This will help developers come up with an easy solution and avoid complexities like OT and CRDTs. However, this also leads to poor user experience. For example, two users may want to add characters to the same section of the document, but their operations may not necessarily conflict.
+
+A lock is a good choice for services like Google Sheets. This is because the document is divided into equal sizes of small cells, and only one user can add or edit the contents of a specific cell.
+---------------------------------------
+
+## Question 2
+What happens if there are two users collaborating on a document and they have different Internet speeds? Which technology, OT or CRDT, is better suited for conflict resolution in such a case?
+### Answer
+With a varied Internet connection speed, the order of operations between users can lead to problems. However, operations are order dependent in OT, whereas operations in CRDTs are order independent. This is why CRDTs are a suitable solution to such a problem.
+---------------------------------------

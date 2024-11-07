@@ -1,0 +1,8 @@
+
+## Question 1
+What are some drawbacks of using a push-based approach?
+### Answer
+The push-based monitoring tool collects metric data from the applications and servers and sends it to a central collection platform. Each microservice sends its metrics to the monitoring system, resulting in a heavy traffic load on the infrastructure. This is how monitoring might become a bottleneck for business operations. The monitoring can be near real-time. However, if appropriate care isn’t taken, it can overwhelm the infrastructure with continual push requests from all services, resulting in network floods. We must also install daemons on each of these targets to send metrics to the monitoring server, which requires additional work.
+
+<!--Amazon CloudWatch and New Relic both use a push strategy in their monitoring. -->
+---------------------------------------

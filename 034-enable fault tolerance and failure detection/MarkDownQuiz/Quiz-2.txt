@@ -1,0 +1,18 @@
+
+## Question 1
+Keeping in mind our consistent hashing approach, can the gossip-based protocol fail?
+### Answer
+Yes, the gossip-based protocol can fail. For example, the virtual node, $N1$, of node $A$ wants to be added to the ring. The administrator asks $N2$, which is also a virtual node of $A$. In such a case, both nodes consider themselves to be part of the ring and won’t be aware that they’re the same server. If any change is made, it will keep on updating itself, which is wrong. This is called **logical partitioning**.
+
+The gossip-based protocol works when all the nodes in the ring are connected in a single graph (i.e., have one connected component in the graph). That implies that there is a  path from any node to any other node (possibly via different intermediaries). Different issues such as high churn (coming and going of nodes), issues with virtual node to physical node mappings, etc. can create a situation that is the same as if the real network had partitioned some nodes from the rest and now updates from one set won't reach to the other. Therefore just having a gossip protocol in itself is not sufficient for proper information dissemination; keeping the topology in a good, connected state is also necessary.
+
+
+
+
+---------------------------------------
+
+## Question 2
+How can we prevent logical partitioning?
+### Answer
+We can make a few nodes play the role of seeds to avoid logical partitions. We can define a set of nodes as seeds via a configuration service. This set of nodes is known to all the working nodes since they can eventually reconcile their membership with a seed. So, logical partitions are pretty rare.
+---------------------------------------

@@ -1,0 +1,8 @@
+
+## Question 1
+Can we use DFS instead of BFS?
+### Answer
+We can use DFS when we want to utilize a website’s persistent connection to traverse all the web pages on that specific domain. This saves time as it helps us avoid reconnecting with the same website repeatedly in case the session expires.
+
+<!--Since repeatedly reconnecting with the website host servers while using BFS is a limitation we want to avoid, we will show how we avoid this bottleneck by using our DNS resolver later in this lesson.-->
+---------------------------------------

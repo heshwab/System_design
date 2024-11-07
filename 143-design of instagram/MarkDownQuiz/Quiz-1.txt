@@ -1,0 +1,6 @@
+
+## Question 1
+Where should we store the photos and videos?
+### Answer
+We’ll store the photos and videos in a blob store (like S3) and save the path of the photo or video in the table as it is efficient to save larger data in a distributed storage.
+---------------------------------------

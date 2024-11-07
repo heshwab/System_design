@@ -1,0 +1,6 @@
+
+## Question 1
+What are the shortcomings of the pull approach?
+### Answer
+Instagram is a read-heavy system. Many people don’t post any photos and instead just view others’ posts. So, the calls we make to fetch the recent posts from every follower will usually return nothing. Hence, we should keep in mind that it is not a write-heavy system and should develop a possible solution to cater to it.
+---------------------------------------

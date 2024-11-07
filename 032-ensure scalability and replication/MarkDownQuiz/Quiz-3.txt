@@ -1,0 +1,6 @@
+
+## Question 1
+What is the impact of synchronous or asynchronous replication?
+### Answer
+In synchronous replication, the speed of writing is slow because the data has to be replicated to all the nodes before acknowledging the user. It affects our availability, so we can’t apply it. When we opt for asynchronous replication, it allows us to do speedy writes to the nodes.
+---------------------------------------

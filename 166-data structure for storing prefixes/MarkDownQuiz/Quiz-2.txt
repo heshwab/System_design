@@ -1,0 +1,6 @@
+
+## Question 1
+Where will the mapping between the prefixes and their primary and secondary storage be stored? Who will manage and direct the requests to these servers?
+### Answer
+In a distributed system where multiple clusters consisting of several servers can be used for a specific service, we use a cluster manager like ZooKeeper to store the mapping between clusters.
+---------------------------------------

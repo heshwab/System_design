@@ -1,0 +1,7 @@
+
+## Question 1
+What happens if a child or parent proxy server fails or if the origin server fails?
+
+### Answer
+Each PoP contains a collection of CDN proxy servers. When any child proxy server stops working due to any failures, DNS can route clients to a different child-level proxy server. Each child proxy server knows many upper-layer parent servers, and if one fails, it can go to the other one. The origin server is a set of servers with a hot backup(s), and content is in replicated store. If any of the origin servers fail, other servers take the load.
+---------------------------------------
